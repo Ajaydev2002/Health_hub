@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    font-family:"roboto",sans-serif;
+}
+.main-container {
+    width: 100%;
+    max-width: 1530px;
+    margin: auto;
+}
+.btn {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    padding-inline: 30px;
+    padding-block: 15px;
+    border-radius: 25px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 70px;
+    padding-block: 25px;
+}
+.logo-heading {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.main-heading span{
+    color: #ccab7a;
+}
+.navlist a {
+    padding-inline: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.btn-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+.header-btn {
+    background-color: #ccab7a;
+    font-size: 15px;
+}
+
+
+#home {
+    background-image: url(./Images/home\ page\ image\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-inline: 120px;
+    justify-content: space-between;
+}
+.home-content p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #f3f0ee;
+}
+.home-content h1 {
+    padding-block: 30px;
+    font-size: 70px;
+}
+.home-content {
+    font-size: 40px;
+    color: #fffefe;
+}
+.home-content button {
+    font-size: 15px;
+    background-color: #94a85c;
+}
+.calender {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.calender-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.calender-header button {
+    background-color: #fff;
+    padding: 10px;
+}
+.days {
+   display: flex;
+   justify-content: space-between;
+   background-color: #f6f5ef;
+   padding-block: 10px;
+}
+.day {
+    text-align: center;
+    padding: 5px;
+}
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+    padding: 10px;
+    padding-block: 20px;
+}
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.date.active{
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+}
+.date:hover {
+    background-color: #94a85c;
+    border-radius: 5px;
+}
+
+
+#our-services {
+    background-color: #f6f5ef;
+}
+.our-services-section1 {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 120px;
+    padding-block: 100px;
+}
+
+.section1-content1-text p{
+    color: #92918b;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.section1-profile{
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+}
+.profile-image {
+    width: 80px;
+    height: 80px;
+}
+.profile-content {
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.profile-content h1 {
+    color: black;
+}
+.profile-content p {
+    color: #a2a09a;
+}
+
+.section1-content2 .para2 {
+    padding-top: 20px;
+}
+.section1-content2 i {
+    color: black;
+}
+.section1-content2 p {
+    color: #92918b;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.section1-content3 p {
+    color: #92918b;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.section1-content3 .para2{
+    padding-top: 20px;
+}
+
+.our-services-section2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 60px;
+}
+
+.online-therapy {
+    background-image: url(./Images/online\ therapy.jpg);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+.online-therapy:hover {
+    cursor: pointer;
+}
+.online-therapy-text {
+    padding-top: 250px;
+}
+.online-therapy-text h1 {
+    font-size: 30px;
+}
+.online-therapy-text p {
+    padding-top: 10px;
+    color: #dcdfd2;
+}
+.family-therapy{
+    background-image: url(./Images/family\ therapy.jpg);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+.family-therapy-text {
+    padding-top: 250px;
+}
+.family-therapy-text h1 {
+    font-size: 30px;
+}
+.family-therapy-text p {
+    padding-top: 10px;
+    color: #dcdfd2;
+}
+.group-therapy {
+    background-image: url(./Images/group\ therapy.jpg);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+.group-therapy-text {
+    padding-top: 250px;
+}
+.group-therapy-text h1 {
+    font-size: 30px;
+}
+.group-therapy-text p {
+    padding-top: 10px;
+    color: #dcdfd2;
+}
