@@ -50,3 +50,4 @@ nextBtnElement.addEventListener('click', () => {
 });
 
 updateCalender();
+    

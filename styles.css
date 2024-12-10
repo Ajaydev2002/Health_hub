@@ -24,6 +24,9 @@ body {
     padding-block: 15px;
     border-radius: 25px;
 }
+.btn:hover {
+    cursor: pointer;
+}
 
 #header {
     display: flex;
@@ -41,12 +44,151 @@ body {
 .main-heading span{
     color: #ccab7a;
 }
-.navlist a {
-    padding-inline: 10px;
+
+.navlist{
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+.home-dropdown{
+    position: relative;
+}
+.home-dropbtn {
+    color: black;
+    background-color: #fff;
     font-size: 15px;
     font-weight: bold;
-    color: black;
+    padding-bottom: 5px;
 }
+.home-dropdown-content {
+    position: absolute;
+    transform: translate(-50px,43px);
+    display: none;
+    background-color: black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+}
+.home-dropdown-content a {
+    display: flex;
+    color: #fff;
+    padding-block:10px;
+}
+.home-dropbtn:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+.home-dropdown:hover .home-dropdown-content{
+    display: block;
+}
+
+.pages-dropdown{
+    position: relative;
+}
+.pages-dropbtn {
+    color: black;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.pages-dropdown-content {
+    position: absolute;
+    transform: translate(-50px,43px);
+    display: none;
+    background-color: black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+}
+.pages-dropdown-content a {
+    display: flex;
+    color: #fff;
+    padding-block:10px;
+}
+.pages-dropbtn:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+.pages-dropdown:hover .pages-dropdown-content{
+    display: block;
+}
+
+.blog-dropdown{
+    position: relative;
+}
+.blog-dropbtn {
+    color: black;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.blog-dropdown-content {
+    position: absolute;
+    transform: translate(-50px,43px);
+    display: none;
+    background-color: black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+}
+.blog-dropdown-content a {
+    display: flex;
+    color: #fff;
+    padding-block:10px;
+}
+.blog-dropbtn:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+.blog-dropdown:hover .blog-dropdown-content{
+    display: block;
+}
+
+.shop-dropdown{
+    position: relative;
+}
+.shop-dropbtn {
+    color: black;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.shop-dropdown-content {
+    position: absolute;
+    transform: translate(-50px,43px);
+    display: none;
+    background-color: black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+}
+.shop-dropdown-content a {
+    display: flex;
+    color: #fff;
+    padding-block:10px;
+}
+.shop-dropbtn:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+.shop-dropdown:hover .shop-dropdown-content{
+    display: block;
+}
+.contact-dropbtn {
+    color: black;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.contact-dropbtn:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+
 .btn-content {
     display: flex;
     justify-content: space-between;
@@ -58,6 +200,15 @@ body {
 .header-btn {
     background-color: #ccab7a;
     font-size: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    padding-inline: 30px;
+    padding-block: 15px;
+    border-radius: 25px;
+}
+.header-btn:hover {
+    cursor: pointer;
 }
 
 
@@ -183,11 +334,15 @@ body {
     color: #a2a09a;
 }
 
+.section1-content2 .para1{
+    text-indent: 10px;
+}
 .section1-content2 .para2 {
     padding-top: 20px;
 }
 .section1-content2 i {
     color: black;
+    font-size: 40px;
 }
 .section1-content2 p {
     color: #92918b;
@@ -214,11 +369,17 @@ body {
 .online-therapy {
     background-image: url(./Images/online\ therapy.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     width: 350px;
     height: 350px;
     color: #fff;
     text-align: center;
     border-radius: 15px;
+}
+.online-therapy:hover {
+    cursor: pointer;
+    background-color: rgba(236, 236, 164, 0.5); 
+    background-blend-mode: overlay; 
 }
 .online-therapy:hover {
     cursor: pointer;
@@ -236,11 +397,17 @@ body {
 .family-therapy{
     background-image: url(./Images/family\ therapy.jpg);
     background-repeat: no-repeat;
+    background-position: bottom;
     width: 350px;
     height: 350px;
     color: #fff;
     text-align: center;
     border-radius: 15px;
+}
+.family-therapy:hover {
+    cursor: pointer;
+    background-color: rgba(236, 236, 164, 0.5); 
+    background-blend-mode: overlay; 
 }
 .family-therapy-text {
     padding-top: 250px;
@@ -255,11 +422,17 @@ body {
 .group-therapy {
     background-image: url(./Images/group\ therapy.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     width: 350px;
     height: 350px;
     color: #fff;
     text-align: center;
     border-radius: 15px;
+}
+.group-therapy:hover {
+    cursor: pointer;
+    background-color: rgba(236, 236, 164, 0.5); 
+    background-blend-mode: overlay; 
 }
 .group-therapy-text {
     padding-top: 250px;
@@ -270,4 +443,176 @@ body {
 .group-therapy-text p {
     padding-top: 10px;
     color: #dcdfd2;
+}
+.service-btn {
+    background-color: #ccab7a;
+}
+.our-services-btn {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+ 
+#support {
+    display: flex;
+    gap: 100px;
+    padding-inline: 70px;
+    margin-bottom: 70px ;
+}
+.support-section1 {
+    padding-top: 100px;
+}
+.support-section1-context1 {
+    display: flex;
+}
+.section1-text {
+    background-color: #94a85c;
+    width: 300px;
+    height: 320px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.section1-text h3 {
+    color: #f7f7f0;
+    padding-top: 20px;
+}
+.section1-text h2 {
+    color: #fffefe;
+    padding-top: 150px;
+    font-size: 40px;
+}
+.section1-image1 {
+    width: 300px;
+    height: 320px;
+    padding-left: 20px;
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+.section1-image2 {
+    width: 600px;
+    height: 320px;
+    border-radius: 15px;
+    padding-top: 20px;
+    border-top-left-radius: 15px;
+}
+
+
+.support-section2 {
+    overflow: auto;
+    height: 750px;
+    padding-top: 200px;
+}
+.support-section2::-webkit-scrollbar {
+    display: none;
+}
+.support-section2-text h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #3a3936;
+}
+.support-section2-text h1 {
+    font-size: 55px;
+    color: #21201d;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+.support-section2-text p {
+    font-size: 16px;
+    color: #a5a49f;
+}
+.support-section2-text .para1 {
+    line-height: 1.5;
+    padding-top: 15px;
+}
+.support-section2-text .para2 {
+    line-height: 1.5;
+    padding-top: 18px;
+}
+
+.humanistic {
+    padding-top: 70px;
+}
+.humanistic h3 {
+    font-size: 25px;
+    padding-top: 15px;
+}
+.humanistic p {
+    font-size: 16px;
+    padding-top: 15px;
+    line-height: 1.5;
+    color: #a5a49f;
+}
+
+.Behavioral {
+    padding-top: 50px;
+}
+.Behavioral h3 {
+    font-size: 25px;
+    padding-top: 15px;
+}
+.Behavioral p {
+    font-size: 16px;
+    padding-top: 15px;
+    line-height: 1.5;
+    color: #a5a49f;
+}
+
+.Interpersonal {
+    padding-top: 50px;
+}
+.Interpersonal h3 {
+    font-size: 25px;
+    padding-top: 15px;
+    color: #21201d;
+}
+.Interpersonal p {
+    font-size: 16px;
+    padding-top: 15px;
+    line-height: 1.5;
+    color: #a5a49f;
+}
+
+.Mindfullness {
+    padding-top: 50px;
+}
+.Mindfullness h3 {
+    font-size: 25px;
+    padding-top: 15px;
+}
+.Mindfullness p {
+    font-size: 16px;
+    padding-top: 15px;
+    line-height: 1.5;
+    color: #a5a49f;
+}
+
+.Existential {
+    padding-top: 50px;
+}
+.Existential h3 {
+    font-size: 25px;
+    padding-top: 15px;
+}
+.Existential p {
+    font-size: 16px;
+    padding-top: 15px;
+    line-height: 1.5;
+    color: #a5a49f;
+}
+
+#subscribe {
+    background-image: url(./Images/thinking\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribebtn {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 30px; 
+    background: none;
 }
