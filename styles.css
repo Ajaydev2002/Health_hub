@@ -20,9 +20,10 @@ body {
     font-size: 15px;
     font-weight: bold;
     color: #fff;
-    padding-inline: 30px;
-    padding-block: 15px;
-    border-radius: 25px;
+    padding-inline: 35px;
+    padding-block: 20px;
+    border-radius: 30px;
+    letter-spacing: 1px;
 }
 .btn:hover {
     cursor: pointer;
@@ -45,6 +46,9 @@ body {
     color: #ccab7a;
 }
 
+.menu-icon {
+    display: none;
+}
 .navlist{
     display: flex;
     justify-content: space-between;
@@ -189,6 +193,9 @@ body {
     border-bottom: 2px solid black;
 }
 
+.phone-icon {
+    display: none;
+}
 .btn-content {
     display: flex;
     justify-content: space-between;
@@ -301,11 +308,14 @@ body {
 }
 .our-services-section1 {
     display: flex;
-    justify-content: space-between;
-    padding-inline: 120px;
+    gap: 50px;
+    padding-inline: 100px;
     padding-block: 100px;
 }
 
+.section1-content1 {
+    width: 550px;
+}
 .section1-content1-text p{
     color: #92918b;
     font-size: 18px;
@@ -334,8 +344,12 @@ body {
     color: #a2a09a;
 }
 
-.section1-content2 .para1{
-    text-indent: 10px;
+.section1-content2 {
+    width: 300px;
+}
+.section2-container2 {
+    display: flex;
+    gap: 50px;
 }
 .section1-content2 .para2 {
     padding-top: 20px;
@@ -350,6 +364,9 @@ body {
     line-height: 1.6;
 }
 
+.section1-content3 {
+    width: 300px;
+}
 .section1-content3 p {
     color: #92918b;
     line-height: 1.6;
@@ -394,6 +411,7 @@ body {
     padding-top: 10px;
     color: #dcdfd2;
 }
+
 .family-therapy{
     background-image: url(./Images/family\ therapy.jpg);
     background-repeat: no-repeat;
@@ -419,6 +437,7 @@ body {
     padding-top: 10px;
     color: #dcdfd2;
 }
+
 .group-therapy {
     background-image: url(./Images/group\ therapy.jpg);
     background-repeat: no-repeat;
@@ -467,10 +486,16 @@ body {
 }
 .section1-text {
     background-color: #94a85c;
-    width: 300px;
+    width: 288px;
     height: 320px;
     border-radius: 15px;
     padding: 10px;
+}
+.section1-text i {
+    font-size: 50px;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 .section1-text h3 {
     color: #f7f7f0;
@@ -478,13 +503,13 @@ body {
 }
 .section1-text h2 {
     color: #fffefe;
-    padding-top: 150px;
+    padding-top: 70px;
     font-size: 40px;
 }
 .section1-image1 {
-    width: 300px;
+    width: 288px;
     height: 320px;
-    padding-left: 20px;
+    margin-left: 20px;
     border-radius: 15px;
     border-top-left-radius: 15px;
     
@@ -493,7 +518,7 @@ body {
     width: 600px;
     height: 320px;
     border-radius: 15px;
-    padding-top: 20px;
+    margin-top: 20px;
     border-top-left-radius: 15px;
 }
 
@@ -501,7 +526,7 @@ body {
 .support-section2 {
     overflow: auto;
     height: 750px;
-    padding-top: 200px;
+    padding-top: 280px;
 }
 .support-section2::-webkit-scrollbar {
     display: none;
@@ -601,6 +626,7 @@ body {
     color: #a5a49f;
 }
 
+
 #subscribe {
     background-image: url(./Images/thinking\ image.jpg);
     background-repeat: no-repeat;
@@ -619,6 +645,7 @@ body {
 .playbtn:hover {
     cursor: pointer;
 }
+
 
 .inputs-container {
     display: flex;
@@ -674,6 +701,9 @@ body {
     background-color: #f6f5ef;
     display: flex;
     padding-bottom: 100px;
+}
+.package-pricelist {
+    display: flex;
 }
 .package-content1 {
     text-align: center;
@@ -755,7 +785,7 @@ body {
 
 .package-content3 {
     margin-top: 220px;
-    margin-left: 150px;
+    margin-left: 130px;
 }
 .package-content3 h3 {
     font-size: 13px;
@@ -806,6 +836,9 @@ body {
     color: #a9bc72;
     font-size: 30px;
 }
+.review-content {
+    padding-inline: 300px;
+}
 .review-content1 p {
     font-size: 20px;
     line-height: 1.5;
@@ -824,6 +857,49 @@ body {
     font-weight: 200;
     margin-top: 10px;
 }
+.review-content2 {
+    display: none;
+}
+.review-content2 p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 50px;
+    color: #21201d;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+.review-content2 h3 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+.review-content2 h5 {
+    color: #92918b;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.review-content3 {
+    display: none;
+}
+.review-content3 p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 50px;
+    color: #21201d;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+.review-content3 h3 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+.review-content3 h5 {
+    color: #92918b;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+}
 .profile-images {
     margin-top: 50px;
 }
@@ -833,12 +909,14 @@ body {
     left: 0;
 }
 
+
+
 #blog {
     margin-bottom: 130px;
+    padding-inline: 130px;
 }
 #blog h4 {
-    font-size: 15px;
-    padding-left: 160px;
+    font-size: 15px; 
     margin-top: 100px;
     letter-spacing: 1px;
     padding-bottom: 20px;
@@ -849,13 +927,18 @@ body {
     gap: 30px;
 }
 .blog-section1 h1 {
-    font-size: 50px;
+    font-size: 52px;
+}
+.phychology-image1 {
+    width: 550px;
+    height: 550px;
+    border-radius: 15px;
+    margin-top: 100px;
+    overflow: hidden;
 }
 .phy-image1 {
-    width: 500px;
+    width: 550px;
     height: 550px;
-    border-radius: 20px;
-    margin-top: 100px;
     transition: transform 0.3s ease;
 }
 .phy-image1:hover {
@@ -885,11 +968,16 @@ body {
 .blog-section2 .para2 {
     margin-top: 13px;
 }
-.phy-image2 {
-    width: 500px;
+.phychology-image2{
+    width: 550px;
     height: 550px;
-    border-radius: 20px;
     margin-top: 130px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.phy-image2 {
+    width: 550px;
+    height: 550px;
     transition: transform 0.3s ease;
 }
 .phy-image2:hover {
@@ -932,25 +1020,464 @@ margin-top: 15px;
     margin-block: 50px;
 }
 
+
+
+#footer {
+    background-color: black;
+}
 .footer-container {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    padding-top: 70px;
+    margin-left: -70px;
+}
+.footer-section1 {
+    display: flex;
+}
+.footer-section2 {
+    display: flex;
+    padding-left: 40px;
 }
 .footer-heading {
     display: flex;
     align-items: center;
+    margin-top: -160px;
+    margin-left: 180px;
 }
 .footer-heading h1 {
     font-size: 30px;
     padding-left: 10px;
+    color: #fff;
 }
 .footer-heading h1 span {
     color: #ccab7a;
 }
 .footer-office {
-    
+    color: #fff;
+    padding-left: 70px;
+}
+.footer-office h1{
+    font-size: 22px;
+}
+.address {
+    line-height: 1.8;
+    padding-top: 30px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+.email {
+    padding-top: 25px;
+    text-decoration: underline;
+
+}
+.num {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    color: #fff;
+}
+.link h1 {
+    font-size: 20px;
+}
+.link a {
+    font-size: 16px;
+    padding-top: 25px;
+    color: #f3f3f3;
+}
+.link a:hover{
+    border-bottom: 1px solid #fff;
+    transition: width 0.2s ease;
+    width: 100%;
+}
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+}
+.get-in {
+    color: #fff;
+    padding-left: 200px;
+}
+.get-in h1 {
+    font-size: 18px;
+}
+.facebook {
+    border: 1px solid #4b4a47;
+    border-radius: 50%;
+    padding: 10px;
+}
+.facebook:hover {
+    cursor: pointer;
+    color: blue;
+}
+.twitter {
+    border: 1px solid #4b4a47;
+    border-radius: 50%;
+    padding: 10px;
+}
+.twitter:hover {
+    cursor: pointer;
+    color: skyblue;
+}
+.thread {
+    border: 1px solid #4b4a47;
+    border-radius: 50%;
+    padding: 10px;
+}
+.thread:hover {
+    cursor: pointer;
+    color: palevioletred;
+}
+.instagram {
+    border: 1px solid #4b4a47;
+    border-radius: 50%;
+    padding: 10px;
+}
+.instagram:hover {
+    cursor: pointer;
+    color: violet;
+}
+.footer-line {
+    border-bottom: 0.5px solid #4e4d4a;
+    padding-top: 70px;
+    margin-inline: 115px;
+}
+.copy-rights {
+    color: #dddcd6;
+    padding-left: 115px;
+    padding-block: 30px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.copy-rights span {
+    color: #92918b;
 }
 
 
 
+
+@media (max-width:900px) {
+
+
+    .btn {
+        font-size: 25px;
+        padding-block: 25px;
+        border-radius: 50px;
+        letter-spacing: 1px;
+    }
+    #header {
+        padding-inline: 30px;
+        padding-block: 30px;
+    }
+    .menu-icon {
+        display: block;
+        padding-left: 300px;
+        font-size: 30px;
+    }
+    .navlist {
+        display: none;
+    }
+    .phone-icon {
+        display: block;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 25px;
+        color: #fff;
+        background-color: #21201d;
+    }
+    .btn-content p {
+        display: none;
+    }
+    .header-btn {
+        font-size: 20px;
+    }
+
+
+    #home {
+        height: 70vh;
+        padding-inline: 20px;
+    }
+    .home-content p {
+        font-size: 20px;
+    }
+    .home-content h1 {
+        padding-block: 30px;
+        font-size: 60px;
+    }
+
+
+    .our-services-section1 {
+        padding-inline: 30px;
+        padding-block: 80px;
+        gap: 30px;
+    }
+    .profile-content h1 {
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+    .section1-content1 {
+        width: 300px;
+    }
+    .section1-content1-text p {
+        font-size: 20px;
+    }
+    .section1-content2 {
+        width: 200px;
+    }
+    .section1-content2 p {
+        font-size: 20px;
+    }
+    .section1-content3 {
+        width: 200px;
+    }
+    .section1-content3 p{
+        font-size: 20px;
+    }
+    .section2-container2 {
+        gap: 30px;
+    }
+
+
+    .our-services-section2 {
+        display: flex;
+        gap: 20px;
+    }
+    .online-therapy {
+        width: 250px;
+        height: 300px;
+    }
+    .online-therapy-text {
+        padding-top: 200px;
+    }
+    .online-therapy-text p {
+        font-size: 20px;
+        padding-inline: 30px;
+    }
+    .family-therapy {
+        width: 250px;
+        height: 300px;
+    }
+    .family-therapy-text {
+        padding-top: 200px;
+    }
+    .family-therapy-text p {
+        font-size: 20px;
+        padding-inline: 30px;
+    }
+    .group-therapy {
+        width: 250px;
+        height: 300px;
+    }
+    .group-therapy-text {
+        padding-top: 200px;
+    }
+    .group-therapy-text p {
+        font-size: 20px;
+        padding-inline: 30px;
+    }
+
+
+    #support {
+        display: flex;
+        gap: 50px;
+        padding-inline: 30px;
+    }
+    .section1-text {
+        width: 180px;
+        height: 250px;
+        padding-inline: 30px;
+    }
+    .section1-text h3 {
+        font-size: 15px;
+    }
+    .section1-text i {
+        font-size: 20px;
+    }
+    .section1-text h2 {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .section1-image1 {
+        width: 180px;
+        height: 250px;
+    }
+    .section1-image2 {
+        width: 380px;
+        height: 250px;
+    }
+    .support-section2-text h1 {
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+
+
+
+    #subscribe {
+        height: 40vh;
+    }
+
+    .inputs-container {
+        padding-inline: 30px;
+    }
+    .input-heading h1 {
+        font-size: 35px;
+    }
+    .input-email input {
+        width: 250px;
+    }
+    .input-email input {
+        font-size: 20px;
+    }
+    .checkbox input {
+        font-size: 30px;
+    }
+    .checkbox label {
+        font-size: 18px;
+    }
+
+
+    #packages {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .package-content3 {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+    .package-content3 h3{
+        font-size: 20px;
+    }
+    .package-content3 h1 {
+        font-size: 50px;
+    }
+    .package-content3 p{
+        font-size: 20px;
+    }
+    .package-image1 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .package-content1 {
+       height: 600px;
+       padding-inline: 80px;
+       margin-left: 70px;
+    }
+    .package-content1 h2 {
+        font-size: 40px;
+    }
+    .package-content1 p {
+        font-size: 20px;
+    }
+    .package-content1 h3 {
+        font-size: 30px;
+    }
+    .package-content1 h3 span {
+        font-size: 70px;
+    }
+
+    .package-image2 {
+        width: 80px;
+        height: 80px;
+    }
+    .package-content2 {
+       height: 600px;
+       padding-inline: 80px;
+    }
+    .package-content2 h2 {
+        font-size: 40px;
+    }
+    .package-content2 p {
+        font-size: 20px;
+    }
+    .package-content2 h3 {
+        font-size: 30px;
+    }
+    .package-content2 h3 span {
+        font-size: 70px;
+    }
+
+
+    .bg-image1 {
+        width: 150px;
+    }   
+    .review-content {
+        padding-inline: 160px;
+    }
+    .review-content1 h3 {
+        font-size: 25px;
+    }
+    .review-content1 h5 {
+        font-size: 20px;
+    }
+
+
+    #blog h4 {
+        padding-left: -60px;
+    }
+    .blog-section1 h1 {
+        font-size: 45px;
+        letter-spacing: -1px;
+    }
+    .blog-section1 p {
+        font-size: 18px;
+    }
+    .blog-section1 h2 {
+        font-size: 35px;
+        padding-left: 16px;
+    }
+    .phychology-image1 {
+        width: 400px;
+        height: 450px;
+        border-radius: 20px;
+        margin-top: 180px;
+        overflow: hidden;
+    }
+    .phy-image1 {
+        width: 400px;
+        height: 450px;
+        transition: transform 0.3s ease;
+    }
+    .blog-section2 p {
+        font-size: 20px;
+    }
+    .phychology-image2{
+        width: 400px;
+        height: 450px;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-top: 80px;
+    }
+    .phy-image2 {
+        width: 400px;
+        height: 450px;
+        transition: transform 0.3s ease;
+    }
+    .blog-section2 h3 {
+        font-size: 18px;
+    }
+    .blog-section2 h2 {
+        font-size: 35px;
+    }
+
+
+    .footer-heading {
+        margin-top: -160px;
+        margin-left: 100px;
+    }
+    .footer-office {
+        padding-left: 40px;
+    }
+    .footer-section2 {
+        padding-left: 20px;
+    }
+    .get-in {
+        color: #fff;
+        padding-left: 50px;
+    }
+}
