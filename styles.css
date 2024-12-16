@@ -476,14 +476,14 @@ body {
     display: flex;
     gap: 100px;
     padding-inline: 70px;
-    margin-bottom: 70px ;
+    margin-bottom: 70px;
 }
 .support-section1 {
     padding-top: 100px;
 }
 .support-section1-context1 {
     display: flex;
-}
+}   
 .section1-text {
     background-color: #94a85c;
     width: 288px;
@@ -654,6 +654,10 @@ body {
     padding-block: 80px;
     align-items: center;
 }
+.input-section {
+    display: flex;
+    gap: 30px;
+}
 .input-heading h1 {
     font-size: 50px;
 }
@@ -713,6 +717,7 @@ body {
     border-radius: 10px;
     padding: 50px;
     height: 500px;
+    width: 260px;
 }
 .para1 {
     color: #969590;
@@ -752,6 +757,7 @@ body {
     margin-left: 30px;
     border-radius: 10px;
     padding: 50px;
+    width: 260px;
 }
 .para2 {
     color: #969590;
@@ -785,7 +791,8 @@ body {
 
 .package-content3 {
     margin-top: 220px;
-    margin-left: 130px;
+    margin-left: 100px;
+    width: 450px;
 }
 .package-content3 h3 {
     font-size: 13px;
@@ -921,19 +928,25 @@ body {
     letter-spacing: 1px;
     padding-bottom: 20px;
 }
-.blog-content {
+.blog-section1 {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 20px;
 }
 .blog-section1 h1 {
     font-size: 52px;
+    width: 550px;
+}
+.blog-section-para p {
+    width: 550px;
+    font-size: 17px;
+    line-height: 1.5;
 }
 .phychology-image1 {
     width: 550px;
     height: 550px;
     border-radius: 15px;
-    margin-top: 100px;
+    margin-top: 70px;
     overflow: hidden;
 }
 .phy-image1 {
@@ -945,19 +958,19 @@ body {
     transform: scale(1.1);
     cursor: pointer;
 }
-.blog-section1 p {
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 25px;
-}
-.blog-section1 p span {
-    color: #b4b3ae;
-}
-.blog-section1 h2 {
+.blog-image-section1 h2 {
     font-size: 35px;
     margin-top: 15px;
+    padding-left: 18px;
+}
+.blog-image-section1 h3 i {
+    padding-right: 10px;
 }
 
+.blog-section2 {
+    display: flex;
+    gap: 30px;
+}
 .blog-section2 p {
     color: #92918e;
     font-size: 16px;
@@ -994,6 +1007,12 @@ body {
 .blog-section2 h2 {
 font-size: 35px;
 margin-top: 15px;
+}
+.blog-image-section2 h3 i {
+    padding-right: 10px;
+}
+.blog-image-section2 h2 {
+    padding-left: 16px;
 }
 
 
@@ -1165,8 +1184,8 @@ margin-top: 15px;
 
 
     .btn {
-        font-size: 25px;
-        padding-block: 25px;
+        font-size: 20px;
+        padding-block: 20px;
         border-radius: 50px;
         letter-spacing: 1px;
     }
@@ -1176,7 +1195,6 @@ margin-top: 15px;
     }
     .menu-icon {
         display: block;
-        padding-left: 300px;
         font-size: 30px;
     }
     .navlist {
@@ -1189,6 +1207,9 @@ margin-top: 15px;
         border-radius: 25px;
         color: #fff;
         background-color: #21201d;
+    }
+    .phone-icon:hover {
+        color: #ccab7a;
     }
     .btn-content p {
         display: none;
@@ -1208,6 +1229,9 @@ margin-top: 15px;
     .home-content h1 {
         padding-block: 30px;
         font-size: 60px;
+    }
+    .home-content button {
+        font-size: 20px;
     }
 
 
@@ -1245,36 +1269,36 @@ margin-top: 15px;
 
     .our-services-section2 {
         display: flex;
-        gap: 20px;
+        gap: 30px;
     }
     .online-therapy {
-        width: 250px;
-        height: 300px;
+        width: 230px;
+        height: 280px;
     }
     .online-therapy-text {
-        padding-top: 200px;
+        padding-top: 180px;
     }
     .online-therapy-text p {
         font-size: 20px;
         padding-inline: 30px;
     }
     .family-therapy {
-        width: 250px;
-        height: 300px;
+        width: 230px;
+        height: 280px;
     }
     .family-therapy-text {
-        padding-top: 200px;
+        padding-top: 180px;
     }
     .family-therapy-text p {
         font-size: 20px;
         padding-inline: 30px;
     }
     .group-therapy {
-        width: 250px;
-        height: 300px;
+        width: 230px;
+        height: 280px;
     }
     .group-therapy-text {
-        padding-top: 200px;
+        padding-top: 180px;
     }
     .group-therapy-text p {
         font-size: 20px;
@@ -1328,9 +1352,7 @@ margin-top: 15px;
         font-size: 35px;
     }
     .input-email input {
-        width: 250px;
-    }
-    .input-email input {
+        width: 260px;
         font-size: 20px;
     }
     .checkbox input {
@@ -1338,6 +1360,9 @@ margin-top: 15px;
     }
     .checkbox label {
         font-size: 18px;
+    }
+    .input-line {
+        width: 280px;
     }
 
 
@@ -1359,17 +1384,24 @@ margin-top: 15px;
         font-size: 20px;
     }
     .package-image1 {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
-
+    .package-pricelist {
+        display: flex;
+        flex-direction: row-reverse;
+       justify-content: center;
+       gap: 30px;
+    }
     .package-content1 {
        height: 600px;
-       padding-inline: 80px;
-       margin-left: 70px;
+       padding-inline: 50px;
+       margin-top: 10px;
+       margin-left: 0px;
+       width: 35    0px;
     }
     .package-content1 h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .package-content1 p {
         font-size: 20px;
@@ -1378,19 +1410,22 @@ margin-top: 15px;
         font-size: 30px;
     }
     .package-content1 h3 span {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .package-image2 {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
     .package-content2 {
        height: 600px;
-       padding-inline: 80px;
+       padding-inline: 50px;
+       margin-top: 60px;
+       margin-left: 0px;
+       width: 350px;
     }
     .package-content2 h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .package-content2 p {
         font-size: 20px;
@@ -1399,7 +1434,7 @@ margin-top: 15px;
         font-size: 30px;
     }
     .package-content2 h3 span {
-        font-size: 70px;
+        font-size: 50px;
     }
 
 
@@ -1417,46 +1452,45 @@ margin-top: 15px;
     }
 
 
-    #blog h4 {
-        padding-left: -60px;
+    #blog {
+        margin-bottom: 130px;
+        padding-inline: 40px;
     }
     .blog-section1 h1 {
-        font-size: 45px;
+        font-size: 40px;
         letter-spacing: -1px;
+        width: 350px;
     }
-    .blog-section1 p {
+    .blog-section-para p {
+        width: 350px;
         font-size: 18px;
     }
-    .blog-section1 h2 {
-        font-size: 35px;
-        padding-left: 16px;
-    }
     .phychology-image1 {
-        width: 400px;
-        height: 450px;
+        width: 350px;
+        height: 400px;
         border-radius: 20px;
-        margin-top: 180px;
+        margin-top: 10px;
         overflow: hidden;
     }
     .phy-image1 {
-        width: 400px;
-        height: 450px;
+        width: 350px;
+        height: 400px;
         transition: transform 0.3s ease;
     }
     .blog-section2 p {
         font-size: 20px;
     }
     .phychology-image2{
-        width: 400px;
-        height: 450px;
+        width: 350px;
+        height: 400px;
         overflow: hidden;
         border-radius: 20px;
-        margin-top: 80px;
+        margin-top: 50px;
     }
     .phy-image2 {
-        width: 400px;
-        height: 450px;
-        transition: transform 0.3s ease;
+        width: 350px;
+        height: 400px;
+        transition: transform 0.3s ease;    
     }
     .blog-section2 h3 {
         font-size: 18px;
@@ -1471,13 +1505,401 @@ margin-top: 15px;
         margin-left: 100px;
     }
     .footer-office {
-        padding-left: 40px;
+        padding-left: 0px;
     }
     .footer-section2 {
         padding-left: 20px;
+    }
+    .link {
+        padding-left: 10px;
+    }
+    .link a {
+        padding-top: 20px;
+    }
+    .footer-office {
+        width: 200px;
+        padding-left: 30px;
+    }
+    .address{
+        padding-top: 1  0px;
     }
     .get-in {
         color: #fff;
         padding-left: 50px;
     }
+
+    .footer-line {
+        padding-top: 50px;
+        margin-inline: 40px;
+    }
+    .copy-rights {
+        padding-left: 45px;
+    }
+}
+
+
+
+@media (max-width:520px) {
+
+    .btn {
+        font-size: 15px;
+        padding-block: 15px;
+        border-radius: 50px;
+        letter-spacing: 0px;
+    }
+
+    #header {
+        padding-inline: 10px;
+        padding-block: 20px;
+    }
+    .logo-image {
+        width: 30px;
+        height: 30px;
+    }
+    .main-heading h1 {
+        font-size: 25px;
+        letter-spacing: -1px;
+    }
+    .header-btn {
+        display: none;
+    }
+    .menu-icon {
+        font-size: 25px;
+    }
+    .phone-icon {
+        padding: 8px;
+        border-radius: 25px;
+        font-size: 15px;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        padding-inline: 20px;
+    }
+    .home-content p {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    .home-content h1 {
+        font-size: 35px;
+        padding-block: 10px;
+    }
+    .home-content button {
+        font-size: 15px;
+    }
+    .calender {
+        margin-block:  50px;
+    }
+    
+    .our-services-section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 20px;
+        padding-block: 50px;
+    }
+    .section1-content1 {
+        width: 100%;
+    }
+    .section1-content1-text p {
+        font-size: 17px;
+    }
+    .section2-container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section1-profile {
+        padding-block: 20px;
+    }
+    .profile-image {
+        width: 70px;
+        height: 70px;
+    }
+    .section1-content2 {
+        width: 100%;
+    }
+    .section1-content2 p {
+        font-size: 17px;
+    }
+    .section1-content2 .para1 i {
+        font-size: 25px;
+    }
+    .section1-content3 p {
+        font-size: 17px;
+    }
+    .section1-content3 {
+        width: 100%;
+        margin-top: -20px;
+    }
+    .section2-container2 {
+        margin-top: -30px;
+    }
+
+    .our-services-section2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+        padding-inline: 15px;
+        padding-bottom: 20px;
+    }
+    .online-therapy {
+        width: 350px;
+        height: 280px;
+    }
+    .family-therapy {
+        width: 350px;
+        height: 280px;
+    }
+    .group-therapy {
+        width: 350px;
+        height: 280px;
+    }
+    .our-services-btn {
+        margin-top: 10px;
+    }
+
+
+    #support {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .support-section1-context1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .support-section1 {
+        padding-top: 50px;
+    } 
+    .section1-text {
+        width: 320px;
+        height: 100px;
+        padding-inline: 30px;
+    }
+    .section1-text h3 {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .section1-text i {
+        display: none;
+    }
+    .section1-text h2 {
+        font-size: 23px;
+        padding-top: 10px;
+    }
+    .section1-image1 {
+        width: 320px;
+        height: 170px;
+        margin-left: 0px;
+    }
+    .section1-image2 {
+        width: 320px;
+        height: 180px;
+        margin-top: 10px;
+    }
+    .support-section2 {
+        padding-top: 0px;
+        overflow: none;
+        height: 100%;
+    }
+    .support-section2-text h1 {
+        font-size: 28px;
+        margin-top: -10px;
+    }
+    .humanistic {
+        padding-top: 30px;
+    }
+    .humanistic h3 {
+        font-size: 20px;
+    }
+    .Behavioral {
+        padding-top: 30px;
+    }
+    .Behavioral h3 {
+        font-size: 20px;
+    }
+    .Interpersonal {
+        padding-top: 30px;
+    }
+    .Interpersonal h3 {
+        font-size: 20px;
+    }
+    .Mindfullness {
+        padding-top: 30px;
+    }
+    .Mindfullness h3 {
+        font-size: 20px;
+    }
+    .Existential {
+        padding-top: 30px;
+    }
+    .Existential h3 {
+        font-size: 20px;
+    }
+
+    .playbtn {
+        color: #fff;
+        border: 1px solid #fff; 
+    }
+
+
+    .input-heading {
+        width: 100%;
+    }
+    .input-heading h1 {
+        font-size: 25px;
+    }
+    .inputs-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-block: 50px;
+    }
+    .input-section {
+        display: flex;
+        gap: 20px;
+    }
+    .input-email input{
+        border: none;
+        outline: none;
+        font-size: 15px;
+        width: 200px;
+        padding-bottom: 20px;
+    }
+    .input-line {
+        width: 200px;
+    }
+    .checkbox label {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+
+    .package-pricelist {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .package-content1 {
+        padding-inline: 10px;
+        width: 340px;
+        margin-inline: 20px;
+    }
+    .package-content2 {
+        width: 340px;
+    }
+    .package-content3 {
+        margin-top: 50px;
+        margin-left: 0px;
+        padding-inline: 20px;
+        width: 100%;
+    }
+    .package-content3 h3 {
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    .package-content3 h1 {
+        font-size: 30px;
+    }
+    .package-content3 p {
+        font-size: 17px;
+    }
+
+
+    .review-content {
+        padding-inline: 10px;
+    }
+    .review-content1 p {
+        font-size: 17px;
+    }
+    .review-content1 h3 {
+        font-size: 20px;
+    }
+    .review-content1 h5 {
+        font-size: 17px;
+    }
+    .profile-image1 {
+        width: 60px;
+    }
+    .profile-image2 {
+        width: 60px;
+    }
+    .profile-image3 {
+        width: 60px;
+    }
+    .bg-image1 {
+       top: 100;
+       width: 80px;
+       display: none;
+    }
+
+
+    #blog {
+        padding-inline: 10px;
+        margin-bottom: 70px;
+    }
+    #blog h4 {
+        margin-top: 50px;
+    }
+    .blog-section1 h1 {
+        margin-block: -10px;
+    }
+    .blog-section-para {
+        margin-top: -10px;
+        margin-bottom: 18px;
+    }
+    .blog-section-para .para1 {
+        font-size: 17px;
+    }
+    .blog-section-para .para2 {
+        font-size: 17px;
+    }
+    .blog-section1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-section1 h1 {
+        font-size: 30px;
+    }
+    .blog-section2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .phychology-image1 {
+        height: 350px;
+    }
+    .phy-image1 {
+        height: 350px;
+    }
+    .blog-section2 h3 {
+        font-size: 15px;
+    }
+    .blog-section2 h2 {
+        font-size: 25px;
+    }
+
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-section1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-section2 {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
