@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+.main-container {
+    width: 100%;
+    max-width: 1530px;
+    margin: auto;
+}
+
+
+@media (max-width:900px) {
+    
+    .main-container {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        transition: top 0.5s ease;
+    }
+    .main-section1 {
+        background-color: #1f2631;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 60%;
+        color: #fff;
+    }
+    .header-heading {
+        display: flex;
+        align-items: center;
+        background-color: #1f2631;
+        color: #fff;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .header-heading h1 {
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    .header-heading span {
+        color: #057ccc;
+    }
+    .menu-image {
+        width: 50px;
+        height: 50px;
+    }
+    .exit {
+        transition: transform 0.5s ease;
+        transform-origin: center;
+    }
+    .exit:hover {
+        transform: rotate(360deg);
+    }
+    .navlist {
+        background-color: #1f2631;
+        margin-top: -150px;
+    }
+    .navlist h2 {
+        margin-left: 40px;
+        font-size: 30px;
+        padding-block: 10px;
+        letter-spacing: 1px;
+    }
+    .top-line {
+        border-bottom: 1px solid #fff;
+        margin-inline: 30px;
+    }
+    .footer-icons i {
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        margin-left: 13px;
+    }
+
+
+    .about {
+        background-color: #193748;
+        width: 40%;
+    }
+    .exit-button {
+        display: flex;
+        color: rgb(221, 226, 231);
+        margin-left: 220px;
+        margin-top: 40px;
+        font-size: 20px;
+        align-items: center;
+    }
+    .exit-button p {
+        color: gray;
+    }
+    .exit-button i {
+        padding-left: 15px;
+        font-size: 30px;
+    }
+
+    .question-section {
+        color: aliceblue;
+        margin-top: 350px;
+        margin-left: 40px;
+    }
+    .question-section1 h3 {
+        font-size: 20px;
+    }
+    .question-section1 h2 {
+        font-size: 25px;
+        margin-top: 5px;
+        text-decoration: underline;
+    }
+    .question-section2 h3 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .question-section2 h2 {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    .question-section3 h3 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .question-section3 h2 {
+        font-size: 25px;
+        margin-top: 5px; 
+    }
+}

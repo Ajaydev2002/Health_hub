@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    font-family:"roboto",sans-serif;
+}
+
+
+#contact-us {
+    padding-inline: 100px;
+    background-color: #f4faff;
+    height: 100vh;
+}
+.main-heading {
+    text-align: center;
+}
+.main-heading h1 {
+    font-size: 50px;
+}
+.main-heading i {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.contact-details {
+    padding-top: 30px;
+}
+.get-in-touch h3 {
+    font-size: 15px;
+}
+.get-in-touch h1 {
+    font-size: 55px;
+    padding-top: 20px;
+}
+.get-in-touch p {
+    font-size: 16px;
+    color: #92918b;
+    padding-top: 20px;
+}
+.location {
+    display: flex;
+    padding-top: 20px;
+}
+.location i {
+    color: green;
+}
+.location p {
+    color: #92918b;
+    padding-left: 20px;
+}
+.contact {
+    display: flex;
+    padding-top: 20px;
+}
+.contact i {
+    color: green;
+}
+.contact p {
+    color: #92918b;
+    padding-left: 20px;
+}
+.email {
+    display: flex;
+    padding-top: 20px;
+}
+.email i {
+    color: green;
+}
+.email p {
+    color: #92918b;
+    padding-left: 20px;
+}
