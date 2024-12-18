@@ -247,7 +247,7 @@ body {
     background-color: #94a85c;
 }
 .calender {
-    width: 400px;
+    width: 450px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -258,7 +258,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 25px;
+}
+.calender-header .monthyear {
+    font-size: 25px;
+    font-weight: bold;
 }
 .calender-header button {
     background-color: #fff;
@@ -266,9 +270,10 @@ body {
 }
 .days {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    background-color: #f6f5ef;
    padding-block: 10px;
+   padding-inline: 20px;
 }
 .day {
     text-align: center;
@@ -277,20 +282,18 @@ body {
 .dates {
     display: grid;
     grid-template-columns: repeat(7,1fr);
-    gap: 10px;
-    padding: 10px;
     padding-block: 20px;
+    padding-inline: 20px;
 }
 .date {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px;
     margin: auto;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 .date.active{
     background-color: black;
@@ -359,6 +362,14 @@ body {
     color: #92918b;
     font-size: 18px;
     line-height: 1.6;
+}
+.section1-content2 .para1 span {
+    color: black;
+    float: left;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    margin-right: 10px;
 }
 
 .section1-content3 {
@@ -506,7 +517,6 @@ body {
     margin-left: 20px;
     border-radius: 15px;
     border-top-left-radius: 15px;
-    
 }
 .section1-image2 {
     width: 680px;
@@ -714,7 +724,7 @@ body {
     height: 500px;
     width: 300px;
 }
-.para1 {
+.package-content1 .para1 {
     color: #969590;
     padding-top: 15px;
 }
@@ -821,6 +831,12 @@ body {
     padding-bottom: 100px;
     position: relative;
 }
+.content {
+    display: none;
+}
+.content.active {
+    display: block;
+}
 .profile-images {
     display: flex;
     justify-content: center;
@@ -842,7 +858,7 @@ body {
 .review-content {
     padding-inline: 300px;
 }
-.review-content1 p {
+#review-content1 p {
     font-size: 23px;
     line-height: 1.5;
     margin-top: 50px;
@@ -850,20 +866,17 @@ body {
     word-spacing: 1px;
     letter-spacing: 1px;
 }
-.review-content1 h3 {
+#review-content1 h3 {
     font-size: 20px;
     margin-top: 30px;
 }
-.review-content1 h5 {
+#review-content1 h5 {
     color: #92918b;
     font-size: 15px;
     font-weight: 200;
     margin-top: 10px;
 }
-.review-content2 {
-    display: none;
-}
-.review-content2 p {
+#review-content2 p {
     font-size: 23px;
     line-height: 1.5;
     margin-top: 50px;
@@ -871,21 +884,18 @@ body {
     word-spacing: 1px;
     letter-spacing: 1px;
 }
-.review-content2 h3 {
+#review-content2 h3 {
     font-size: 20px;
     margin-top: 30px;
 }
-.review-content2 h5 {
+#review-content2 h5 {
     color: #92918b;
     font-size: 15px;
     font-weight: 200;
     margin-top: 10px;
 }
 
-.review-content3 {
-    display: none;
-}
-.review-content3 p {
+#review-content3 p {
     font-size: 23px;
     line-height: 1.5;
     margin-top: 50px;
@@ -893,11 +903,11 @@ body {
     word-spacing: 1px;
     letter-spacing: 1px;
 }
-.review-content3 h3 {
+#review-content3 h3 {
     font-size: 20px;
     margin-top: 30px;
 }
-.review-content3 h5 {
+#review-content3 h5 {
     color: #92918b;
     font-size: 15px;
     font-weight: 200;
@@ -936,6 +946,7 @@ body {
 }
 .blog-section-para p {
     width: 620px;
+    color: #92918b;
     font-size: 17px;
     line-height: 1.5;
     padding-left: 20px;
@@ -975,9 +986,6 @@ body {
     line-height: 1.5;
     word-spacing: 1px;
     letter-spacing: 1px;
-}
-.blog-section2 .para2 {
-    margin-top: 13px;
 }
 .phychology-image2{
     width: 620px;
@@ -1218,7 +1226,6 @@ body {
 
 
     #home {
-        height: 60vh;
         padding-inline: 20px;
     }
     .home-content p {
@@ -1231,11 +1238,18 @@ body {
     .home-content button {
         font-size: 20px;
     }
+    .calender {
+        width: 350px;
+    }
+    .date {
+        width: 40px;
+        height: 40px;
+    }
 
 
     .our-services-section1 {
         padding-inline: 30px;
-        padding-block: 80px;
+        padding-block: 60px;
         gap: 30px;
     }
     .profile-content h1 {
@@ -1246,19 +1260,19 @@ body {
         width: 300px;
     }
     .section1-content1-text p {
-        font-size: 20px;
+        font-size: 18px;
     }
     .section1-content2 {
         width: 200px;
     }
     .section1-content2 p {
-        font-size: 20px;
+        font-size: 18px;
     }
     .section1-content3 {
         width: 200px;
     }
     .section1-content3 p{
-        font-size: 20px;
+        font-size: 18px;
     }
     .section2-container2 {
         gap: 30px;
@@ -1309,6 +1323,12 @@ body {
         gap: 50px;
         padding-inline: 30px;
     }
+    .support-section1 {
+        position: sticky;
+        top: 0;
+        height: fit-content;
+        padding-top: 80px;
+    }
     .section1-text {
         width: 180px;
         height: 250px;
@@ -1335,6 +1355,11 @@ body {
     .support-section2-text h1 {
         font-size: 40px;
         letter-spacing: -1px;
+    }
+    .support-section2 {
+        overflow: none;
+        height: 100%;
+        padding-top: 80px;
     }
 
 
@@ -1454,11 +1479,11 @@ body {
     .review-content {
         padding-inline: 140px;
     }
-    .review-content1 h3 {
+    #review-content1 h3 {
         font-size: 20px;
         margin-top: 20px;
     }
-    .review-content1 h5 {
+    #review-content1 h5 {
         font-size: 20px;
     }
 
@@ -1496,7 +1521,7 @@ body {
         height: 400px;
         overflow: hidden;
         border-radius: 20px;
-        margin-top: 50px;
+        margin-top: 70px;
     }
     .phy-image2 {
         width: 350px;
@@ -1594,8 +1619,9 @@ body {
     #home {
         display: flex;
         flex-direction: column;
-        height: 90vh;
+        height: 100%;
         padding-inline: 20px;
+        padding-block: 10px;
     }
     .home-content p {
         font-size: 15px;
@@ -1610,10 +1636,17 @@ body {
     }
     .calender {
         margin-block:  50px;
+        width: 320px;
     }
+    .days {
+        padding-inline: 10px;
+     }
+     .dates {
+        padding-inline: 10px;
+     }
     
     .our-services-section1 {
-        display: flex;
+        display: flex;  
         flex-direction: column;
         justify-content: center;
         padding-inline: 20px;
@@ -1657,26 +1690,54 @@ body {
         margin-top: -30px;
     }
 
+
     .our-services-section2 {
         display: flex;
         flex-direction: column;
         gap: 20px;
         justify-content: center;
-        text-align: center;
+        align-items: center;
         padding-inline: 15px;
         padding-bottom: 20px;
     }
     .online-therapy {
-        width: 350px;
-        height: 280px;
+        width:310px;
+        height: 330px;
+    }
+    .online-therapy-text {
+        padding-top: 240px;
+    }
+    .online-therapy-text h1 {
+        font-size: 25px;
+    }
+    .online-therapy-text p {
+        font-size: 16px;
     }
     .family-therapy {
-        width: 350px;
-        height: 280px;
+        width: 310px;
+        height: 330px;
+    }
+    .family-therapy-text {
+        padding-top: 240px;
+    }
+    .family-therapy-text h1 {
+        font-size: 25px;
+    }
+    .family-therapy-text p {
+        font-size: 16px;
     }
     .group-therapy {
-        width: 350px;
-        height: 280px;
+        width: 310px;
+        height: 330px;
+    }
+    .group-therapy-text {
+        padding-top: 240px;
+    }
+    .group-therapy-text h1 {
+        font-size: 25px;
+    }
+    .group-therapy-text p {
+        font-size: 16px;
     }
     .our-services-btn {
         margin-top: 10px;
@@ -1698,9 +1759,19 @@ body {
     }
     .support-section1 {
         padding-top: 50px;
+        position: relative;
+        height: 100%;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     } 
+    .support-section2 {
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
     .section1-text {
-        width: 320px;
+        width: 310px;
         height: 100px;
         padding-inline: 30px;
     }
@@ -1716,12 +1787,12 @@ body {
         padding-top: 10px;
     }
     .section1-image1 {
-        width: 320px;
+        width: 310px;
         height: 170px;
         margin-left: 0px;
     }
     .section1-image2 {
-        width: 320px;
+        width: 310px;
         height: 180px;
         margin-top: 10px;
     }
@@ -1771,35 +1842,37 @@ body {
     }
 
 
-    .input-heading {
-        width: 100%;
-    }
     .input-heading h1 {
         font-size: 25px;
+        width: 100%;
+        letter-spacing: -1px;
+        padding-inline: 25px;
     }
     .inputs-container {
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding-block: 50px;
+        padding-inline: 10px;
     }
     .input-section {
         display: flex;
-        gap: 20px;
+        gap: 0px;
     }
     .input-email input{
-        border: none;
-        outline: none;
         font-size: 15px;
         width: 200px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .input-line {
-        width: 200px;
+        width: 180px;
+    }
+    .checkbox {
+        padding-top: 10PX;
     }
     .checkbox label {
         font-size: 12px;
-        padding-left: 10px;
+        padding-left: 2px;
     }
 
 
@@ -1811,11 +1884,17 @@ body {
     }
     .package-content1 {
         padding-inline: 10px;
-        width: 340px;
+        width: 310px;
+        height: 490px;
         margin-inline: 20px;
+        padding: 10px;
+        padding-top: 30px;
     }
     .package-content2 {
-        width: 340px;
+        width: 310px;
+        height: 490px;
+        padding: 10px;
+        padding-top: 30px;
     }
     .package-content3 {
         margin-top: 50px;
@@ -1838,13 +1917,13 @@ body {
     .review-content {
         padding-inline: 10px;
     }
-    .review-content1 p {
+    #review-content1 p {
         font-size: 17px;
     }
-    .review-content1 h3 {
+    #review-content1 h3 {
         font-size: 20px;
     }
-    .review-content1 h5 {
+    #review-content1 h5 {
         font-size: 17px;
     }
     .profile-image1 {
@@ -1864,18 +1943,36 @@ body {
 
 
     #blog {
-        padding-inline: 10px;
-        margin-bottom: 70px;
+        padding-inline: 20px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
     }
     #blog h4 {
         margin-top: 50px;
     }
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog-section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .blog-section1 h1 {
-        margin-block: -10px;
+        margin-block: -5px;
+        width: 280px;
     }
     .blog-section-para {
         margin-top: -10px;
         margin-bottom: 18px;
+    }
+    .blog-section-para p {
+        padding-left: 0px;
+        width: 310px;
     }
     .blog-section-para .para1 {
         font-size: 17px;
@@ -1883,21 +1980,29 @@ body {
     .blog-section-para .para2 {
         font-size: 17px;
     }
-    .blog-section1 {
-        display: flex;
-        flex-direction: column;
-    }
     .blog-section1 h1 {
         font-size: 30px;
     }
     .blog-section2 {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .phychology-image1 {
+        width: 310px;
         height: 350px;
     }
     .phy-image1 {
+        width: 310px;
+        height: 350px;
+    }
+    .phychology-image2 {
+        width: 310px;
+        height: 350px;
+    }
+    .phy-image2 {
+        width: 310px;
         height: 350px;
     }
     .blog-section2 h3 {
@@ -1921,6 +2026,7 @@ body {
         margin-block: 30px;
         margin-bottom: 50px;
     }
+
 
     .footer-heading {
         margin-top: -30px;
@@ -1974,7 +2080,7 @@ body {
     .footer-line {
         padding-top: 30px;
         margin-inline: 15px;
-    }
+    }   
     .copy-rights {
         font-size: 15px;
         padding-block: 10px;
