@@ -26,6 +26,7 @@ body {
 }
 .btn:hover {
     cursor: pointer;
+    background-color: #c2b672;
 }
 
 #header {
@@ -215,6 +216,7 @@ body {
 }
 .header-btn:hover {
     cursor: pointer;
+    background-color: #c2b672;
 }
 
 
@@ -222,6 +224,7 @@ body {
     background-image: url(./Images/home\ page\ image\ 3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100%;
     display: flex;
     align-items: center;
@@ -244,6 +247,9 @@ body {
 }
 .home-content button {
     font-size: 15px;
+    background-color: #a4b37a;
+}
+.home-content button:hover {
     background-color: #94a85c;
 }
 .calender {
@@ -299,6 +305,9 @@ body {
     background-color: black;
     color: #fff;
     border-radius: 5px;
+}
+.date.inactive {
+    color: #c0bfbf;
 }
 .date:hover {
     background-color: #94a85c;
@@ -646,10 +655,31 @@ body {
     border-radius: 50%;
     padding: 30px; 
     background: none;
+    position: abloute;
 }
 .playbtn:hover {
     cursor: pointer;
 }
+#video-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+ }
+ .closebtn {
+    position: absolute;
+    background: none;
+    font-size: 30px;
+    color: #dbd5d5;
+    padding-left: 10px;
+ }
+ #video {
+    width: 1000px;
+    height: 500px;
+ }
 
 
 .inputs-container {
@@ -921,7 +951,9 @@ body {
     top: 0;
     left: 0;
 }
-
+.profile-images img:hover {
+    transform: scale(1.2);
+}
 
 
 #blog {
@@ -1215,7 +1247,7 @@ body {
         background-color: #21201d;
     }
     .phone-icon:hover {
-        color: #ccab7a;
+        background-color: #ccab7a;
     }
     .btn-content p {
         display: none;
@@ -1367,13 +1399,17 @@ body {
     #subscribe {
         height: 40vh;
     }
+    #video {
+        width: 600px;
+        height: 300px;
+     }
 
 
     .inputs-container {
         padding-inline: 30px;
     }
     .input-heading h1 {
-        font-size: 33   px;
+        font-size: 33px;
     }
     .input-section {
         display: flex;
@@ -1486,6 +1522,20 @@ body {
     #review-content1 h5 {
         font-size: 20px;
     }
+    #review-content2 h3 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    #review-content2 h5 {
+        font-size: 20px;
+    }
+    #review-content3 h3 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    #review-content3 h5 {
+        font-size: 20px;
+    }
 
 
     #blog {
@@ -1543,7 +1593,7 @@ body {
 
 
     .footer-heading {
-        margin-top: -160px;
+        margin-top: -200px;
         margin-left: 100px;
     }
     .footer-office {
@@ -1569,6 +1619,10 @@ body {
     .get-in {
         color: #fff;
         padding-left: 50px;
+    }
+    .footer-icons {
+        display: flex;
+        gap: 5px;
     }
 
     .footer-line {
@@ -1836,10 +1890,15 @@ body {
         font-size: 20px;
     }
 
+
     .playbtn {
         color: #fff;
         border: 1px solid #fff; 
     }
+    #video {
+        width: 300px;
+        height: 200px;
+     }
 
 
     .input-heading h1 {
@@ -1926,6 +1985,24 @@ body {
     #review-content1 h5 {
         font-size: 17px;
     }
+    #review-content2 p {
+        font-size: 17px;
+    }
+    #review-content2 h3 {
+        font-size: 20px;
+    }
+    #review-content2 h5 {
+        font-size: 17px;
+    }
+    #review-content3 p {
+        font-size: 17px;
+    }
+    #review-content3 h3 {
+        font-size: 20px;
+    }
+    #review-content3 h5 {
+        font-size: 17px;
+    }
     .profile-image1 {
         width: 60px;
     }
@@ -1943,7 +2020,7 @@ body {
 
 
     #blog {
-        padding-inline: 20px;
+        padding-inline: 50px;
         margin-bottom: 50px;
         display: flex;
         flex-direction: column ;
