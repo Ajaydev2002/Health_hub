@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=roboto,wght@0,200..1000;1,200..1000&display=swap');
+
 
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family:"roboto",sans-serif;
+    font-family:"Onest",sans-serif;
 }
 .main-container {
     width: 100%;
@@ -52,7 +52,11 @@ body {
 .navlist{
     display: flex;
     justify-content: space-between;
-    gap: 18px;
+    gap: 25px;
+}
+.navlist a {
+    font-weight: 500;
+    font-size: 16px;
 }
 .home-dropdown{
     position: relative;
@@ -67,7 +71,7 @@ body {
 .home-dropdown-content {
     position: absolute;
     transform: translate(-50px,43px);
-    display: none;
+    visibility: hidden;
     background-color: black;
     border-radius: 10px;
     width: 200px;
@@ -83,7 +87,27 @@ body {
     border-bottom: 2px solid black;
 }
 .home-dropdown:hover .home-dropdown-content{
-    display: block;
+   visibility: visible; 
+    z-index: 1;
+}
+.home-dropdown-content a {
+    transition: transform 0.3s ease;
+}
+.home-dropdown-content a:hover {
+    transform: translateX(10px);
+}
+.home-dropdown-content a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px; 
+    width: 0;
+    height: 1px; 
+    background-color: #fff; 
+    transition: width 0.5s ease; 
+}
+.home-dropdown-content a:hover::after {
+    width: 100%; 
 }
 
 .pages-dropdown{
@@ -116,6 +140,26 @@ body {
 }
 .pages-dropdown:hover .pages-dropdown-content{
     display: block;
+    z-index: 1;
+}
+.pages-dropdown-content a {
+    transition: transform 0.3s ease;
+}
+.pages-dropdown-content a:hover {
+    transform: translateX(10px);
+}
+.pages-dropdown-content a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px; 
+    width: 0;
+    height: 1px; 
+    background-color: #fff; 
+    transition: width 0.5s ease; 
+}
+.pages-dropdown-content a:hover::after {
+    width: 100%; 
 }
 
 .blog-dropdown{
@@ -148,6 +192,7 @@ body {
 }
 .blog-dropdown:hover .blog-dropdown-content{
     display: block;
+    z-index: 1;
 }
 
 .shop-dropdown{
@@ -180,6 +225,7 @@ body {
 }
 .shop-dropdown:hover .shop-dropdown-content{
     display: block;
+    z-index: 1;
 }
 .contact-dropbtn {
     color: black;
@@ -221,7 +267,7 @@ body {
 
 
 #home {
-    background-image: url(./Images/home\ page\ image\ 3.jpg);
+    background-image: url(./Images/home\ page\ image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -231,6 +277,7 @@ body {
     padding-inline: 120px;
     justify-content: space-between;
     padding-block: 135px;
+    position: relative;
 }
 .home-content p {
     font-size: 15px;
@@ -292,6 +339,7 @@ body {
     padding-inline: 20px;
 }
 .date {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,6 +349,39 @@ body {
     width: 60px;
     height: 60px;
 }
+.dates .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 10;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.dates .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+.dates:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
 .date.active{
     background-color: black;
     color: #fff;
@@ -309,9 +390,149 @@ body {
 .date.inactive {
     color: #c0bfbf;
 }
+.date.inactive:hover {
+   background-color: #fff;
+   cursor: not-allowed;
+}
 .date:hover {
     background-color: #94a85c;
     border-radius: 5px;
+}
+.Appointment-container {
+    display: block;
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+    border: 5px solid #94a85c;
+    text-align: center;
+    padding-inline: 40px;
+}
+.Appointment-container i {
+    padding-right: 10px;
+}
+.Appointment-container h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.appointment1 {
+    background-color: #ff6347;
+    border-radius: 50px;
+    margin-block: 15px;
+    padding-block: 12px;
+    color: #fff;
+}
+.appointment1 p {
+    padding-left: 13px;
+}
+.appointment2 {
+    background-color: #ff6347;
+    border-radius: 50px;
+    margin-block: 15px;
+    padding-block: 12px;
+    color: #fff;
+}
+.appointment2 p {
+    padding-left: 13px;
+}
+.appointment3 {
+    background-color: #ff6347;
+    border-radius: 50px;
+    margin-block: 15px;
+    padding-block: 12px;
+    color: #fff;
+}
+.appointment3 p {
+    padding-left: 13px;
+}
+
+.request-container {
+    display: none;
+}
+.main-request {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    justify-content: center;
+    width: 450px;
+    background-color: #fff;
+}
+.request-heading {
+    display: flex;
+    background-color: #f6f5ef;
+    width: 100%;
+    justify-content: space-between;
+    padding-block: 15px;
+    padding-inline: 20px;
+}
+.request-heading h2 {
+    font-size: 19px;
+}
+.request-heading i {
+    font-size: 25px;
+}
+.request-content {
+    background-color: #fff;
+    padding-inline: 25px;
+}
+.request-content h2 {
+    font-size: 18px;
+    padding-top: 25px;
+}
+.request-email input {
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-bottom: 1px solid rgb(215, 215, 202);
+    padding-block: 15px;
+    padding-top: 20px;
+    width: 100%;
+}
+.request-email {
+    color: antiquewhite;
+}
+.email-input::placeholder {
+    color: rgb(195, 189, 189);
+}
+.password-input::placeholder {
+    color: rgb(195, 189, 189);
+}
+.request-password input {
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-bottom: 1px solid rgb(215, 215, 202);
+    padding-block: 15px;
+    width: 100%;
+}
+.request-content p {
+    padding-top: 15px;
+    color: #ff6347;
+}
+.request-btn {
+    display: flex;
+    justify-content: space-between;
+}
+.signin {
+    background-color: #ff6347;
+    padding-inline: 40px;
+    padding-block: 15px;
+    margin-block: 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+.cancel {
+    background-color: #ff6347;
+    padding-inline: 40px;
+    padding-block: 15px;
+    margin-block: 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
 }
 
 
@@ -401,6 +622,7 @@ body {
     background-image: url(./Images/online\ therapy.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     width: 400px;
     height: 400px;
     color: #fff;
@@ -430,6 +652,7 @@ body {
     background-image: url(./Images/family\ therapy.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
     width: 400px;
     height: 400px;
     color: #fff;
@@ -456,6 +679,7 @@ body {
     background-image: url(./Images/group\ therapy.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     width: 400px;
     height: 400px;
     color: #fff;
@@ -651,9 +875,11 @@ body {
     align-items: center;
 }
 .playbtn {
-    border: 1px solid black;
-    border-radius: 50%;
-    padding: 30px; 
+    border: 1px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+    padding-inline: 30px;
+    padding-block: 40px; 
     background: none;
     position: abloute;
 }
@@ -1147,8 +1373,21 @@ body {
     color: #f3f3f3;
     transition: 80px 0.5s ease-in-out;
 }
-.link a:hover{
-    border-bottom: 1px solid #fff;
+.link a:hover {
+    transform: translateX(10px);
+}
+.link a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px; 
+    width: 0;
+    height: 1px; 
+    background-color: #fff; 
+    transition: width 0.5s ease; 
+}
+.link a:hover::after {
+    width: 100%; 
 }
 .footer-icons {
     display: flex;
@@ -1164,8 +1403,9 @@ body {
 }
 .facebook {
     border: 1px solid #4b4a47;
-    border-radius: 50%;
-    padding: 10px;
+    border-radius: 55%;
+    padding-inline: 11px;
+    padding-block: 10px;
 }
 .facebook:hover {
     cursor: pointer;
@@ -1174,7 +1414,8 @@ body {
 .twitter {
     border: 1px solid #4b4a47;
     border-radius: 50%;
-    padding: 10px;
+    padding-inline: 11px;
+    padding-block: 10px;
 }
 .twitter:hover {
     cursor: pointer;
@@ -1183,7 +1424,8 @@ body {
 .thread {
     border: 1px solid #4b4a47;
     border-radius: 50%;
-    padding: 10px;
+    padding-inline: 12px;
+    padding-block: 10px;
 }
 .thread:hover {
     cursor: pointer;
@@ -1192,7 +1434,8 @@ body {
 .instagram {
     border: 1px solid #4b4a47;
     border-radius: 50%;
-    padding: 10px;
+    padding-inline: 12px;
+    padding-block: 10px;
 }
 .instagram:hover {
     cursor: pointer;

@@ -6,11 +6,12 @@ let timeout;
 dropdown.addEventListener('mouseleave', () => {
     timeout = setTimeout(() => {
       dropdownContent.style.display = 'none';
-    }, 1000);
+    }, 3000);
   });
 
 dropdown.addEventListener('mouseenter', () => {
     clearTimeout(timeout);
     dropdownContent.style.display = 'block';
   });
+
 

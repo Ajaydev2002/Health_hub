@@ -7,10 +7,14 @@
     <title>Health Hub</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/503e6e67ad.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="main-container">    
+    <div class="main-container">
         <header id="header">
             <div class="logo-heading">
                 <div>
@@ -102,7 +106,59 @@
                     <div class="day">FRI</div>
                     <div class="day">SAT</div>
                 </div>
-                <div class="dates" id="dates"></div>
+                <div class="dates" id="dates">
+                    <span class="tooltip">3 available</span>
+                </div>
+                <div class="Appointment-container">
+                    <div>
+                        <h2>Dec 20 2024</h2>
+                    </div>
+                    <div class="appointment1">
+                        <div><i class="fa-regular fa-clock"></i>1:00 pm - 2:00 pm</div>
+                        <div>
+                            <p>1 space available</p>
+                        </div>
+                    </div>
+                    <div class="appointment2">
+                        <div><i class="fa-regular fa-clock"></i>2:00 pm - 3:00 pm</div>
+                        <div>
+                            <p>2 space available</p>
+                        </div>
+                    </div>
+                    <div class="appointment3">
+                        <div><i class="fa-regular fa-clock"></i>3:00 pm - 4:00 pm</div>
+                        <div>
+                            <p>1 space available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="request-container">
+                <div class="main-request">
+                    <div class="request-heading">
+                        <div>
+                            <h2>Request an Appointment</h2>
+                        </div>
+                        <div class="closebtn"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="request-content">
+                        <div>
+                            <h2>Welcome back , please sign in:</h2>
+                        </div>
+                        <div class="request-email"><input type="text" placeholder="Email Address ..."
+                                class="email-input"></div>
+                        <div class="request-password"><input type="password" placeholder="Password ..."
+                                class="password-input"></div>
+                        <div>
+                            <p>I forgot my password.</p>
+                        </div>
+                        <div class="request-btn">
+                            <button class="signin">sign in</button>
+                            <button class="cancel">cancel</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -232,16 +288,12 @@
 
         <section id="subscribe">
             <button class="playbtn">PLAY</button>
-            <div id ="video-container">
-                <iframe 
-                id="video"  
-                src="https://www.youtube.com/embed/AarAP2ur7gQ?si=abuv5IzjPi5raAFo" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
+            <div id="video-container">
+                <iframe id="video" src="https://www.youtube.com/embed/AarAP2ur7gQ?si=abuv5IzjPi5raAFo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
                 <button class="closebtn"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </section>
@@ -249,14 +301,14 @@
 
         <section id="input-content">
             <div class="inputs-container">
-                
+
                 <div class="input-heading">
                     <h1>Subscribe for the exclusive updates!</h1>
                 </div>
 
                 <div class="input-section">
                     <div class="input-details">
-                        <div class="input-email">   
+                        <div class="input-email">
                             <input type="text" placeholder="Enter your email address">
                         </div>
                         <div class="input-line"></div>
@@ -322,7 +374,7 @@
             <div class="review-container">
                 <i class="fa-solid fa-quote-left"></i>
                 <div class="review-content">
-                    <div id ="review-content1" class="content">
+                    <div id="review-content1" class="content">
                         <p>Consectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed
                             do eiusm od tempor incididunt ut labore.Consectetur adipiscing elit, sed do eiusm
                             onsectetur adipiscing elit, sed
@@ -330,7 +382,7 @@
                         <h3>Hannah Miles</h3>
                         <h5>cranston, RI</h5>
                     </div>
-                    <div id ="review-content2" class="content">
+                    <div id="review-content2" class="content">
                         <p>sed ut adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed
                             do eiusm od tempor incididunt ut labore.Consectetur adipiscing elit, sed do eiusm
                             onsectetur adipiscing elit, sed
@@ -338,7 +390,7 @@
                         <h3>John Carter</h3>
                         <h5>Ferndale, CA</h5>
                     </div>
-                    <div id ="review-content3" class="content">
+                    <div id="review-content3" class="content">
                         <p>At vero eos et adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed
                             do eiusm od tempor incididunt ut labore.Consectetur adipiscing elit, sed do eiusm
                             onsectetur adipiscing elit, sed
@@ -358,13 +410,15 @@
 
 
         <section id="blog">
-            <div> <h4>BLOG</h4></div>
+            <div>
+                <h4>BLOG</h4>
+            </div>
             <div class="blog-content">
                 <div class="blog-section1">
                     <div>
                         <h1>Insights on solving <br>everyday issues</h1>
                     </div>
-                    <div class="blog-section-para"> 
+                    <div class="blog-section-para">
                         <p class="para1">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                         <p class="para2">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -400,7 +454,7 @@
             </div>
         </section>
 
-        
+
         <section id="footer">
             <div class="footer-container">
                 <div class="footer-section1">
@@ -446,13 +500,14 @@
         </section>
     </div>
 
-
     <script src="contact.js"></script>
     <script src="main.js"></script>
     <script src="video.js"></script>
     <script src="menu.js"></script>
     <script src="review.js"></script>
     <script src="dropdown.js"></script>
+    <script src="appointment.js"></script>
+    <script src="request.js"></script>
 </body>
 
 </html>
