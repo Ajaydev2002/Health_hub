@@ -1,9 +1,19 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const dates = document.querySelectorAll(".dates .date");
+    const appointmentContainer = document.querySelector(".Appointment-container");
+    let lastClickedDate = null; 
 
-const dates = document.querySelectorAll('.date');
-const appointmentContainer = document.querySelector('#appointment-container');
-
-dates.forEach(date => {
-    date.addEventListener('click', () => {
-        appointmentContainer.style.display = 'block';
+    dates.forEach(date => {
+        date.addEventListener("click", () => {
+            if (lastClickedDate === date) {
+                appointmentContainer.style.display =
+                    appointmentContainer.style.display === "block" ? "none" : "block";
+            } 
+            else 
+            {
+                appointmentContainer.style.display = "block";
+            }
+            lastClickedDate = date;
+        });
     });
 });

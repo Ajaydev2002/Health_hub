@@ -3,7 +3,7 @@ const Contents = document.querySelectorAll('.review-content div');
 
 if (Contents.length > 0) {
     Contents.forEach(content => content.classList.remove('active'));
-    Contents[0].classList.add('active');    
+    Contents[0].classList.add('active');  
 }
 
 profiles.forEach(profile => {

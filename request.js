@@ -1,15 +1,20 @@
-const  appointments = document.querySelectorAll('.Appointment-container');
-const requests = document.querySelectorAll('.request-container');
-const exitButton = document.querySelectorAll('.closebtn');
+document.addEventListener("DOMContentLoaded", () => {
+    const appointments = document.querySelectorAll(".Appointment-container div[class^='appointment']");
+    const requestContainer = document.querySelector(".request-container");
+    const exitButton = document.querySelector(".exitbtn");
+    const cancelButton = document.querySelector(".cancel");
 
-
-appointments.foreach(appointment => {
-    appointment.addEventListener('click', () => {
-        requests.style.display = 'block';
+    appointments.forEach(appointment => {
+        appointment.addEventListener("click", () => {
+            requestContainer.style.display = "flex";
+        });
     });
-});
 
+    exitButton.addEventListener("click", () => {
+        requestContainer.style.display = "none";
+    });
 
-exitButton.addEventListener('click', () => {
-    request.style.display = 'none';
+    cancelButton.addEventListener("click", () => {
+        requestContainer.style.display = "none";
+    });
 });

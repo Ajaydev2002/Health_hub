@@ -71,11 +71,12 @@ body {
 .home-dropdown-content {
     position: absolute;
     transform: translate(-50px,43px);
-    visibility: hidden;
+    display: none;
     background-color: black;
     border-radius: 10px;
     width: 200px;
     padding: 20px;
+    z-index: 10;
 }
 .home-dropdown-content a {
     display: flex;
@@ -85,10 +86,6 @@ body {
 .home-dropbtn:hover{
     cursor: pointer;
     border-bottom: 2px solid black;
-}
-.home-dropdown:hover .home-dropdown-content{
-   visibility: visible; 
-    z-index: 1;
 }
 .home-dropdown-content a {
     transition: transform 0.3s ease;
@@ -194,6 +191,25 @@ body {
     display: block;
     z-index: 1;
 }
+.blog-dropdown-content a {
+    transition: transform 0.3s ease;
+}
+.blog-dropdown-content a:hover {
+    transform: translateX(10px);
+}
+.blog-dropdown-content a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px; 
+    width: 0;
+    height: 1px; 
+    background-color: #fff; 
+    transition: width 0.5s ease; 
+}
+.blog-dropdown-content a:hover::after {
+    width: 100%; 
+}
 
 .shop-dropdown{
     position: relative;
@@ -227,6 +243,26 @@ body {
     display: block;
     z-index: 1;
 }
+.shop-dropdown-content a {
+    transition: transform 0.3s ease;
+}
+.shop-dropdown-content a:hover {
+    transform: translateX(10px);
+}
+.shop-dropdown-content a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px; 
+    width: 0;
+    height: 1px; 
+    background-color: #fff; 
+    transition: width 0.5s ease; 
+}
+.shop-dropdown-content a:hover::after {
+    width: 100%; 
+}
+
 .contact-dropbtn {
     color: black;
     background-color: #fff;
@@ -271,7 +307,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     padding-inline: 120px;
@@ -349,38 +385,20 @@ body {
     width: 60px;
     height: 60px;
 }
-.dates .tooltip {
-    visibility: hidden;
-    width: 120px;
-    background-color: #fff;
-    color: black;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+.tooltip {
+    display: none;
     position: absolute;
-    z-index: 10;
-    bottom: 150%;
-    left: 50%;
     transform: translateX(-50%);
+    background-color: #f6f5ef;
+    border: 1px solid lightslategray;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
     white-space: nowrap;
-    opacity: 0; 
-    transition: opacity 0.3s ease;
-}
-
-.dates .tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%);
-    border-width: 5px;
-    border-style: solid;
-    border-color: #333 transparent transparent transparent;
-}
-.dates:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
+    font-size: 12px;
+    z-index: 10;
+    font-size: 12px;
+  }
 
 .date.active{
     background-color: black;
@@ -398,8 +416,9 @@ body {
     background-color: #94a85c;
     border-radius: 5px;
 }
+
 .Appointment-container {
-    display: block;
+    display: none;
     width: 100%;
     height: 150px;
     overflow: auto;
@@ -421,6 +440,9 @@ body {
     padding-block: 12px;
     color: #fff;
 }
+.appointment1:hover {
+    cursor: pointer;
+}
 .appointment1 p {
     padding-left: 13px;
 }
@@ -430,6 +452,9 @@ body {
     margin-block: 15px;
     padding-block: 12px;
     color: #fff;
+}
+.appointment2:hover {
+    cursor: pointer;
 }
 .appointment2 p {
     padding-left: 13px;
@@ -441,26 +466,36 @@ body {
     padding-block: 12px;
     color: #fff;
 }
+.appointment3:hover {
+    cursor: pointer;
+}
 .appointment3 p {
     padding-left: 13px;
 }
 
 .request-container {
     display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 30;
 }
 .main-request {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100px;
-    left: 500px;
+    position: fixed;
     justify-content: center;
     width: 450px;
-    background-color: #fff;
 }
 .request-heading {
     display: flex;
-    background-color: #f6f5ef;
+    background-color: #e2dfce;
     width: 100%;
     justify-content: space-between;
     padding-block: 15px;
@@ -533,6 +568,95 @@ body {
     font-size: 16px;
     color: #fff;
     font-weight: 500;
+}
+
+
+.icons-content {
+    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 0;
+    z-index: 100;
+}
+.buy-theme {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.buy-theme p {
+    background-color: #ccab7a;
+    padding: 19px;
+    color: #fff;
+    font-size: 12px;
+    display: none;
+}
+.buy-theme i {
+    background-color: #1082e3;
+    padding: 19px;
+    color: #fff;
+}
+.buy-theme i:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-5px);
+}
+.buy-theme i:hover + .buy-text {
+    display: block;
+}
+
+.bestseller {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+   margin-block: 2px;
+}
+.bestseller p {
+    background-color: #ccab7a;
+    padding: 20px;
+    color: #fff;
+    font-size: 12px;
+    display: none;
+}
+.bestseller i {
+    background-color: #1082e3;
+    padding: 20px;
+    color: #fff;
+}
+.bestseller i:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-5px);
+}
+.bestseller i:hover + .seller-text {
+    display: block;
+}
+
+.hide-panel {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.hide-panel p {
+    background-color: #ccab7a;
+    padding: 20px;
+    color: #fff;
+    font-size: 12px;
+    display: none;
+}
+.hide-panel i {
+    background-color: #1082e3;
+    padding: 20px;
+    color: #fff;
+}
+.hide-panel i:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-5px);
+}
+.hide-panel i:hover + .hide-text {
+    display: block;
 }
 
 
@@ -639,6 +763,9 @@ body {
 }
 .online-therapy-text {
     padding-top: 300px;
+    padding-bottom: 32px;
+    background-color: rgba(73, 71, 71, 0.4);
+    border-radius: 15px;
 }
 .online-therapy-text h1 {
     font-size: 30px;
@@ -666,6 +793,9 @@ body {
 }
 .family-therapy-text {
     padding-top: 300px;
+    padding-bottom: 32px;
+    background-color: rgba(73, 71, 71, 0.4);
+    border-radius: 15px;
 }
 .family-therapy-text h1 {
     font-size: 30px;
@@ -693,6 +823,9 @@ body {
 }
 .group-therapy-text {
     padding-top: 300px;
+    padding-bottom: 32px;
+    background-color: rgba(73, 71, 71, 0.4);
+    border-radius: 15px;
 }
 .group-therapy-text h1 {
     font-size: 30px;
@@ -764,9 +897,11 @@ body {
     overflow: auto;
     height: 830px;
     padding-top: 280px;
+    margin-top: 10px;
 }
-.support-section2::-webkit-scrollbar {
-    display: none;
+.support-section2::-webkit-scrollbar-corner {
+    background: #888;
+    border-radius: 10px; 
 }
 .support-section2-text h3 {
     font-size: 15px;
@@ -934,12 +1069,12 @@ body {
 }
 .checkbox {
     display: flex;
-    align-items: center;
     padding-top: 20px;
     color: #92918b;
 }
 .checkbox input {
     background-color: #b4b3ae;
+    margin-top: 4px;
 }
 .checkbox input:hover {
     cursor: pointer;
@@ -1178,6 +1313,7 @@ body {
     left: 0;
 }
 .profile-images img:hover {
+    transition: transform 0.5s ease;
     transform: scale(1.2);
 }
 
@@ -1219,7 +1355,7 @@ body {
 .phy-image1 {
     width: 620px;
     height: 670px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 .phy-image1:hover {
     transform: scale(1.1);
@@ -1255,7 +1391,7 @@ body {
 .phy-image2 {
     width: 620px;
     height: 670px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 .phy-image2:hover {
     transform: scale(1.1);
@@ -1371,9 +1507,9 @@ body {
     font-size: 16px;
     padding-top: 25px;
     color: #f3f3f3;
-    transition: 80px 0.5s ease-in-out;
 }
 .link a:hover {
+    transition: transform 0.5s ease-in-out;
     transform: translateX(10px);
 }
 .link a::after {
@@ -1502,6 +1638,7 @@ body {
 
     #home {
         padding-inline: 20px;
+        height: 60vh;
     }
     .home-content p {
         font-size: 20px;
@@ -1519,6 +1656,17 @@ body {
     .date {
         width: 40px;
         height: 40px;
+    }
+
+    .main-request {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        position: fixed;
+        top: 250px;
+        left: 200px;
+        justify-content: center;
+        width: 450px;
     }
 
 
@@ -1563,7 +1711,7 @@ body {
         height: 280px;
     }
     .online-therapy-text {
-        padding-top: 180px;
+        padding-top: 150px;
     }
     .online-therapy-text p {
         font-size: 20px;
@@ -1574,7 +1722,7 @@ body {
         height: 280px;
     }
     .family-therapy-text {
-        padding-top: 180px;
+        padding-top: 150px;
     }
     .family-therapy-text p {
         font-size: 20px;
@@ -1585,7 +1733,7 @@ body {
         height: 280px;
     }
     .group-therapy-text {
-        padding-top: 180px;
+        padding-top: 150px;
     }
     .group-therapy-text p {
         font-size: 20px;
@@ -1987,6 +2135,17 @@ body {
         margin-top: -30px;
     }
 
+    .main-request {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        justify-content: center;
+        width: 100%;
+    }
+
 
     .our-services-section2 {
         display: flex;
@@ -2002,7 +2161,7 @@ body {
         height: 330px;
     }
     .online-therapy-text {
-        padding-top: 240px;
+        padding-top: 235px;
     }
     .online-therapy-text h1 {
         font-size: 25px;
@@ -2015,7 +2174,7 @@ body {
         height: 330px;
     }
     .family-therapy-text {
-        padding-top: 240px;
+        padding-top: 235px;
     }
     .family-therapy-text h1 {
         font-size: 25px;
@@ -2028,7 +2187,7 @@ body {
         height: 330px;
     }
     .group-therapy-text {
-        padding-top: 240px;
+        padding-top: 235px;
     }
     .group-therapy-text h1 {
         font-size: 25px;

@@ -8,7 +8,7 @@ function postMessageToIframe(message) {
 }
 
 showVideoButton.addEventListener('click', () => {
-    videoContainer.style.display = 'block'; 
+    videoContainer.style.display = 'block';
     postMessageToIframe({ event: 'command', func: 'playVideo' }); 
 });
 
