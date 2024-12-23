@@ -596,8 +596,9 @@ body {
     align-items: center;
     position: absolute;
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     left: 20px;
+    z-index: 100;
 }
 .please-chat i {
     border: 1px solid rgb(73, 185, 59);
@@ -2207,6 +2208,13 @@ body {
         width: 100%;
     }
 
+    .please-chat i {
+        font-size: 15px;
+        padding: 15px;
+    }
+    .please-chat p {
+        font-size: 13px;
+    }
 
     .our-services-section2 {
         display: flex;
