@@ -78,6 +78,9 @@ body {
     padding: 20px;
     z-index: 10;
 }
+.home-dropdown-content:hover {
+    display: block;
+}
 .home-dropdown-content a {
     display: flex;
     color: #fff;
@@ -125,19 +128,19 @@ body {
     border-radius: 10px;
     width: 200px;
     padding: 20px;
+    z-index: 10;
+}
+.pages-dropdown-content:hover {
+    display: block;
 }
 .pages-dropdown-content a {
-    display: flex;
+    display: block;
     color: #fff;
     padding-block:10px;
 }
 .pages-dropbtn:hover{
     cursor: pointer;
     border-bottom: 2px solid black;
-}
-.pages-dropdown:hover .pages-dropdown-content{
-    display: block;
-    z-index: 1;
 }
 .pages-dropdown-content a {
     transition: transform 0.3s ease;
@@ -177,19 +180,19 @@ body {
     border-radius: 10px;
     width: 200px;
     padding: 20px;
+    z-index: 10;
+}
+.blog-dropdown-content:hover {
+    display: block;
 }
 .blog-dropdown-content a {
-    display: flex;
+    display: block;
     color: #fff;
     padding-block:10px;
 }
 .blog-dropbtn:hover{
     cursor: pointer;
     border-bottom: 2px solid black;
-}
-.blog-dropdown:hover .blog-dropdown-content{
-    display: block;
-    z-index: 1;
 }
 .blog-dropdown-content a {
     transition: transform 0.3s ease;
@@ -229,6 +232,10 @@ body {
     border-radius: 10px;
     width: 200px;
     padding: 20px;
+    z-index: 10;
+}
+.shop-dropdown-content:hover {
+    display: block;
 }
 .shop-dropdown-content a {
     display: flex;
@@ -238,10 +245,6 @@ body {
 .shop-dropbtn:hover{
     cursor: pointer;
     border-bottom: 2px solid black;
-}
-.shop-dropdown:hover .shop-dropdown-content{
-    display: block;
-    z-index: 1;
 }
 .shop-dropdown-content a {
     transition: transform 0.3s ease;
@@ -568,6 +571,50 @@ body {
     font-size: 16px;
     color: #fff;
     font-weight: 500;
+}
+
+.scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    padding: 10px 15px;
+    background-color:black; 
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000; 
+}
+
+.scroll-top-button:hover {
+    background-color: #ccab7a
+}
+
+.please-chat {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+}
+.please-chat i {
+    border: 1px solid rgb(73, 185, 59);
+    padding: 20px;
+    background-color: rgb(73, 185, 59);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.please-chat p {
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 16px;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 18, 46, 0.24) 0px 6px 32px 0px;
+    background: rgb(255, 255, 255); 
 }
 
 
@@ -899,10 +946,17 @@ body {
     padding-top: 280px;
     margin-top: 10px;
 }
-.support-section2::-webkit-scrollbar-corner {
-    background: #888;
-    border-radius: 10px; 
+.support-section2::-webkit-scrollbar {
+    width: 10px;
+  }
+.support-section2::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
 }
+.support-section2::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+  }
 .support-section2-text h3 {
     font-size: 15px;
     letter-spacing: 1px;
@@ -1020,7 +1074,7 @@ body {
 }
 .playbtn:hover {
     cursor: pointer;
-}
+}   
 #video-container {
     display: none;
     position: fixed;
@@ -1599,6 +1653,13 @@ body {
 
 @media (max-width:900px) {
 
+    body {
+        opacity: 1;
+        transition: opacity 1s ease;
+    }
+    body.fade-out {
+        opacity: 0;
+    }
 
     .btn {
         font-size: 20px;

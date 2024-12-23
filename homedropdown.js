@@ -2,24 +2,31 @@ const dropdown = document.querySelector('.home-dropbtn');
 const dropdownContent = document.querySelector('.home-dropdown-content');
 console.log('dropdown', dropdown)
 
+let timeoutId;
 
-dropdown.addEventListener('mouseenter', () => {
-    dropdownContent.style.display = 'block';
-});
+function showDropdown() {
+    clearTimeout(timeoutId);
+    dropdownContent.style.display = 'block'; 
+}
 
-dropdown.addEventListener('mouseleave', () => {
-    setTimeout(() => {
-        dropdownContent.style.display = 'none';
-    }, 1000);
-});
+function hideDropdownWithDelay() {
+    timeoutId = setTimeout(() => {
+        if (!dropdown.matches(':hover') && !dropdownContent.matches(':hover')) {
+            dropdownContent.style.display = 'none'; 
+        }
+    }, 500);
+}
 
-dropdownContent.addEventListener('mouseenter', () => {
-    dropdownContent.style.display = 'block';
-});
+dropdown.addEventListener('mouseover', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdownWithDelay);
 
-dropdowncontent.addEventListener('mouseleave', () => {
-    setTimeout(() => {
-        dropdownContent.style.display = 'none';
-    }, 1000);
-});
+dropdownContent.addEventListener('mouseover', showDropdown);
+dropdownContent.addEventListener('mouseleave', hideDropdownWithDelay);
+
+
+
+
+
+
+
 
