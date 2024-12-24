@@ -392,7 +392,6 @@ body {
 .tooltip {
     display: none;
     position: absolute;
-    transform: translateX(-50%);
     background-color: #f6f5ef;
     border: 1px solid lightslategray;
     color: black;
@@ -402,7 +401,7 @@ body {
     font-size: 12px;
     z-index: 10;
     font-size: 12px;
-  }
+}
 
 .date.active{
     background-color: black;
@@ -1118,7 +1117,7 @@ body {
     outline: none;
     font-size: 18px;
     width: 450px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 .input-line {
     border-bottom: 1px solid black;
@@ -1545,10 +1544,16 @@ body {
     padding-top: 25px;
     text-decoration: underline;
 }
+.email:hover {
+    cursor: pointer;
+}
 .num {
     padding-top: 30px;
     font-weight: bold;
     font-size: 20px;
+}
+.num:hover {
+    cursor: pointer;
 }
 .link {
     display: flex;
@@ -1598,7 +1603,7 @@ body {
 .facebook {
     border: 1px solid #4b4a47;
     border-radius: 55%;
-    padding-inline: 11px;
+    padding-inline: 12px;
     padding-block: 10px;
 }
 .facebook:hover {
@@ -1608,7 +1613,7 @@ body {
 .twitter {
     border: 1px solid #4b4a47;
     border-radius: 50%;
-    padding-inline: 11px;
+    padding-inline: 12px;
     padding-block: 10px;
 }
 .twitter:hover {
@@ -1618,7 +1623,7 @@ body {
 .thread {
     border: 1px solid #4b4a47;
     border-radius: 50%;
-    padding-inline: 12px;
+    padding-inline: 13px;
     padding-block: 10px;
 }
 .thread:hover {
@@ -1628,7 +1633,7 @@ body {
 .instagram {
     border: 1px solid #4b4a47;
     border-radius: 50%;
-    padding-inline: 12px;
+    padding-inline: 13px;
     padding-block: 10px;
 }
 .instagram:hover {
@@ -2395,7 +2400,7 @@ body {
     .input-email input{
         font-size: 15px;
         width: 200px;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
     .input-line {
         width: 180px;

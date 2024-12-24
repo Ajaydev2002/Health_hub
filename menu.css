@@ -73,6 +73,7 @@
     }
     .exit:hover {
         transform: rotate(360deg);
+        transform-origin: center;
     }
     .navlist {
         background-color: #1f2631;
@@ -182,11 +183,19 @@
         border-bottom: 1px solid #fff;
         margin-inline: 20px;
     }
+    .footer-icons {
+        align-items: center;
+        text-align: center;
+    }
     .footer-icons i {
         padding: 5px;
         margin-top: 20px;
         margin-bottom: 15px;
         margin-left: 13px;
+    }
+    .footer-icons i:hover {
+        cursor: pointer;
+        color: #057ccc;
     }
 
 

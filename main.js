@@ -27,9 +27,20 @@ const updateCalender = () => {
 
     for (let i = 1; i <= totalDays; i++) {
         const date = new Date(currentYear, currentMonth, i);
-        const activeClass = date.toDateString() === new Date().toDateString() ? 'active' : '';
-        datesHTML += `<div class="date ${activeClass}">${i}</div>`;
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); 
+    
+        let dateClass = '';
+    
+        if (date.toDateString() === today.toDateString()) {
+            dateClass = 'active'; 
+        } else if (date < today) {
+            dateClass = 'inactive'; 
+        }
+    
+        datesHTML += `<div class="date ${dateClass}">${i}</div>`;
     }
+    
 
     for (let i = 1; i < 7 - lastDayIndex; i++) {
         const nextDate = new Date(currentYear, currentMonth + 1, i);

@@ -87,7 +87,7 @@
 
         <section>
             <div class="icons-content">
-                <div class="buy-theme">                   
+                <div class="buy-theme">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <p class="buy-text">BUY THEME</p>
                 </div>
@@ -126,6 +126,7 @@
                 <div class="dates" id="dates">
                 </div>
                 <div class="tooltip"></div>
+
                 <div class="Appointment-container">
                     <div>
                         <h2>Dec 24 2024</h2>
@@ -164,17 +165,22 @@
                     <div>
                         <h2>Welcome back , please sign in:</h2>
                     </div>
-                    <div class="request-email"><input type="text" placeholder="Email Address ..." class="email-input">
-                    </div>
-                    <div class="request-password"><input type="password" placeholder="Password ..."
-                            class="password-input"></div>
-                    <div>
-                        <p>I forgot my password.</p>
-                    </div>
-                    <div class="request-btn">
-                        <button class="signin">sign in</button>
-                        <button class="cancel">cancel</button>
-                    </div>
+
+                    <form id="requestForm">
+                        <div class="request-email">
+                            <input type="email" placeholder="Email Address ..." class="email-input" required>
+                        </div>
+                        <div class="request-password">
+                            <input type="password" placeholder="Password ..." class="password-input" required>
+                        </div>
+                        <div>
+                            <p>I forgot my password.</p>
+                        </div>
+                        <div class="request-btn">
+                            <button class="signin">sign in</button>
+                            <button class="cancel">cancel</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
