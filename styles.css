@@ -248,6 +248,7 @@ body {
 }
 .shop-dropdown-content a {
     transition: transform 0.3s ease;
+    display: inline-block;
 }
 .shop-dropdown-content a:hover {
     transform: translateX(10px);
@@ -1515,7 +1516,7 @@ body {
 .footer-heading {
     display: flex;
     align-items: center;
-    margin-top: -160px;
+    margin-top: -200px;
     margin-left: 180px;
 }
 .footer-heading h1 {
@@ -1562,6 +1563,8 @@ body {
     font-size: 16px;
     padding-top: 25px;
     color: #f3f3f3;
+    display: inline-block;
+    position: relative;
 }
 .link a:hover {
     transition: transform 0.5s ease-in-out;
