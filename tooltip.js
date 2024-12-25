@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
           tooltip.style.display = "block";
           tooltip.textContent = `${availableSlots} Available`;
           tooltip.style.left = `${rect.left + (rect.width - tooltip.offsetWidth) / 2}px`; 
-          tooltip.style.top = `${rect.top - tooltip.offsetHeight - 10}px`;
+          tooltip.style.top = `${rect.top - tooltip.offsetHeight - 100}px`;
         });
   
         date.addEventListener("mouseleave", () => {
