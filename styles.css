@@ -584,7 +584,7 @@ body {
     border-radius: 25px;
     cursor: pointer;
     font-size: 20px;
-    z-index: 1000; 
+    z-index: 10; 
 }
 
 .scroll-top-button:hover {
@@ -598,7 +598,7 @@ body {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    z-index: 100;
+    z-index: 10;
 }
 .please-chat i {
     border: 1px solid rgb(73, 185, 59);
@@ -626,7 +626,7 @@ body {
     flex-direction: column;
     top: 50%;
     right: 0;
-    z-index: 100;
+    z-index: 10;
 }
 .buy-theme {
     display: flex;
@@ -1101,7 +1101,7 @@ body {
 .inputs-container {
     display: flex;
     justify-content: space-between;
-    padding-inline: 100px;
+    padding-inline: 110px;
     padding-block: 100px;
     align-items: center;
 }
@@ -2210,7 +2210,7 @@ body {
         flex-direction: column;
         position: absolute;
         position: fixed;
-        top: 0px;
+        top: 25%;
         left: 0px;
         justify-content: center;
         width: 100%;
