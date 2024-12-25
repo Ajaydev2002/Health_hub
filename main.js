@@ -29,18 +29,17 @@ const updateCalender = () => {
         const date = new Date(currentYear, currentMonth, i);
         const today = new Date();
         today.setHours(0, 0, 0, 0); 
-    
+
         let dateClass = '';
-    
+
         if (date.toDateString() === today.toDateString()) {
             dateClass = 'active'; 
         } else if (date < today) {
             dateClass = 'inactive'; 
         }
-    
-        datesHTML += `<div class="date ${dateClass}">${i}</div>`;
+
+        datesHTML += `<div class="date ${dateClass}" data-day="${i}">${i}</div>`;
     }
-    
 
     for (let i = 1; i < 7 - lastDayIndex; i++) {
         const nextDate = new Date(currentYear, currentMonth + 1, i);
