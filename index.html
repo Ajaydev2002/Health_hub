@@ -167,18 +167,22 @@
                     </div>
 
                     <form id="requestForm">
-                        <div class="request-email">
-                            <input type="email" placeholder="Email Address ..." class="email-input" required>
+                        <div id="requestemail">
+                            <div class="request-email">
+                                <input type="email" placeholder="Email Address ..." class="email-input">
+                            </div>
+
+                            <div class="email-errormessage"></div>
                         </div>
 
-                        <div class="email-errormessage"></div>
+                        <div id="requestpassword">
+                            <div class="request-password">
+                                <input type="password" placeholder="Password ..." class="password-input">
+                            </div>
 
-                        <div class="request-password">
-                            <input type="password" placeholder="Password ..." class="password-input" required>
+                            <div class="password-errormessage"></div>
                         </div>
 
-                        <div class = "password-errormessage"></div>
-                        
                         <div>
                             <p>I forgot my password.</p>
                         </div>

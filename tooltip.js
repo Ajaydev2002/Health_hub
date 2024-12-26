@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         lastClickedDate = null; 
                     } else {
                         date.style.backgroundColor = "green"; 
+                        date.style.color = "white"
                         appointmentContainer.style.display = "block";
                     }
                 } else {

@@ -2232,6 +2232,7 @@ body {
     }
     .please-chat p {
         font-size: 13px;
+        display: none;
     }
 
     .our-services-section2 {
