@@ -25,8 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 const rect = date.getBoundingClientRect();
                 tooltip.style.display = "block";
                 tooltip.textContent = `${availableSlots} Available`;
-
-                
                 tooltip.style.left = `${rect.left + (rect.width - tooltip.offsetWidth) / 2}px`; 
                 tooltip.style.top = `${rect.top - tooltip.offsetHeight - -90}px`; 
             });
@@ -35,21 +33,33 @@ document.addEventListener("DOMContentLoaded", () => {
                 tooltip.style.display = "none";
             });
 
+            
             date.addEventListener("click", () => {
                 if (lastClickedDate === date) {
-                    appointmentContainer.style.display = 
-                        appointmentContainer.style.display === "block" ? "none" : "block";
+
+                    if (date.style.backgroundColor === "green") {
+                        date.style.backgroundColor = ""; 
+                        appointmentContainer.style.display = "none"; 
+                        lastClickedDate = null; 
+                    } else {
+                        date.style.backgroundColor = "green"; 
+                        appointmentContainer.style.display = "block";
+                    }
                 } else {
+                    if (lastClickedDate) {
+                        lastClickedDate.style.backgroundColor = "";
+                    }
+            
+                    date.style.backgroundColor = "green";
                     appointmentContainer.style.display = "block";
-
+            
                     appointments.forEach(appointment => appointment.style.display = "none");
-
                     for (let i = 0; i < availableSlots; i++) {
                         appointments[i].style.display = "block";
                     }
+            
+                    lastClickedDate = date;
                 }
-
-                lastClickedDate = date;
             });
         }
     });

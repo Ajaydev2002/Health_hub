@@ -17,4 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
     cancelButton.addEventListener("click", () => {
         requestContainer.style.display = "none";
     });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === "Escape") {
+            requestContainer.style.display = "none";
+        }
+    });
+    
 });
